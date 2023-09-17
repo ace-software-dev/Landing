@@ -138,7 +138,7 @@ module.exports = require("next/dist/shared/lib/utils.js");
 
 /***/ }),
 
-/***/ 2262:
+/***/ 1365:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -202,7 +202,7 @@ __webpack_require__.r(__webpack_exports__);
         'signup',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4507)), "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\app\\(auth)\\signup\\page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4507)), "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\app\\(auth)\\signup\\page.tsx"],
           
         }]
       },
@@ -213,18 +213,18 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 970)), "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\app\\(auth)\\layout.tsx"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 970)), "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\app\\(auth)\\layout.tsx"],
           
         }
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3658)), "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\app\\layout.tsx"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3658)), "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\app\\layout.tsx"],
           
         }
       ]
       }.children;
-    const pages = ["C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\app\\(auth)\\signup\\page.tsx"];
+    const pages = ["C:\\Users\\jorge\\Repositories\\ACE\\Landing\\app\\(auth)\\signup\\page.tsx"];
 
     
     
@@ -492,7 +492,7 @@ function SignUp() {
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [683,158,863,822], () => (__webpack_exec__(2262)));
+var __webpack_exports__ = __webpack_require__.X(0, [683,158,45,751], () => (__webpack_exec__(1365)));
 module.exports = __webpack_exports__;
 
 })();

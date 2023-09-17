@@ -1,4 +1,4 @@
-// File: C:\Users\jorge\Repositories\ACE\Landing\open-react-template\app\api\hello\route.ts
+// File: C:\Users\jorge\Repositories\ACE\Landing\app\api\hello\route.ts
 import * as entry from '../../../../../app/api/hello/route.js'
 import type { NextRequest } from 'next/server.js'
 

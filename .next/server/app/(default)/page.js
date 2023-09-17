@@ -228,7 +228,7 @@ module.exports = require("next/dist/shared/lib/utils/warn-once.js");
 
 /***/ }),
 
-/***/ 2562:
+/***/ 7142:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -290,23 +290,23 @@ __webpack_require__.r(__webpack_exports__);
         '(default)',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9852)), "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\app\\(default)\\page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9852)), "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\app\\(default)\\page.tsx"],
           
         }]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 663)), "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\app\\(default)\\layout.tsx"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 663)), "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\app\\(default)\\layout.tsx"],
           
         }
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3658)), "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\app\\layout.tsx"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3658)), "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\app\\layout.tsx"],
           
         }
       ]
       }.children;
-    const pages = ["C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\app\\(default)\\page.tsx"];
+    const pages = ["C:\\Users\\jorge\\Repositories\\ACE\\Landing\\app\\(default)\\page.tsx"];
 
     
     
@@ -333,36 +333,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 6746:
+/***/ 8819:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 473))
 
 /***/ }),
 
-/***/ 5492:
+/***/ 7220:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 588));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2645));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 7649, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7751));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7264));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2213));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4166));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8796));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5541))
-
-/***/ }),
-
-/***/ 95:
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 125, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 9775, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6249, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 1522, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 3100, 23))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5541));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7751));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7264));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2213))
 
 /***/ }),
 
@@ -923,7 +912,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1313);
 
-const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`C:\Users\jorge\Repositories\ACE\Landing\open-react-template\app\(default)\layout.tsx`)
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`C:\Users\jorge\Repositories\ACE\Landing\app\(default)\layout.tsx`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -958,7 +947,7 @@ var jsx_runtime_ = __webpack_require__(6786);
 var module_proxy = __webpack_require__(1313);
 ;// CONCATENATED MODULE: ./components/modal-video.tsx
 
-const proxy = (0,module_proxy.createProxy)(String.raw`C:\Users\jorge\Repositories\ACE\Landing\open-react-template\components\modal-video.tsx`)
+const proxy = (0,module_proxy.createProxy)(String.raw`C:\Users\jorge\Repositories\ACE\Landing\components\modal-video.tsx`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -2113,7 +2102,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [683,158,985,863], () => (__webpack_exec__(2562)));
+var __webpack_exports__ = __webpack_require__.X(0, [683,158,985,45], () => (__webpack_exec__(7142)));
 module.exports = __webpack_exports__;
 
 })();

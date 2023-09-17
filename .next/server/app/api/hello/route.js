@@ -33,7 +33,7 @@ module.exports = require("next/dist/compiled/cookie");
 
 /***/ }),
 
-/***/ 3383:
+/***/ 1234:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -67,7 +67,7 @@ async function GET(request) {
     return new Response("Hello, Next.js!");
 }
 
-;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?page=%2Fapi%2Fhello%2Froute&name=app%2Fapi%2Fhello%2Froute&pagePath=private-next-app-dir%2Fapi%2Fhello%2Froute.ts&appDir=C%3A%5CUsers%5Cjorge%5CRepositories%5CACE%5CLanding%5Copen-react-template%5Capp&appPaths=%2Fapi%2Fhello%2Froute&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=!
+;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?page=%2Fapi%2Fhello%2Froute&name=app%2Fapi%2Fhello%2Froute&pagePath=private-next-app-dir%2Fapi%2Fhello%2Froute.ts&appDir=C%3A%5CUsers%5Cjorge%5CRepositories%5CACE%5CLanding%5Capp&appPaths=%2Fapi%2Fhello%2Froute&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=export&preferredRegion=!
 
     
 
@@ -78,8 +78,8 @@ async function GET(request) {
     const routeModule = new (module_default())({
     userland: route_namespaceObject,
     pathname: "/api/hello",
-    resolvedPagePath: "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\app\\api\\hello\\route.ts",
-    nextConfigOutput: undefined,
+    resolvedPagePath: "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\app\\api\\hello\\route.ts",
+    nextConfigOutput: "export",
   })
 
     // Pull out the exports that we need to expose from the module. This should
@@ -106,7 +106,7 @@ async function GET(request) {
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [683,981], () => (__webpack_exec__(3383)));
+var __webpack_exports__ = __webpack_require__.X(0, [683,981], () => (__webpack_exec__(1234)));
 module.exports = __webpack_exports__;
 
 })();

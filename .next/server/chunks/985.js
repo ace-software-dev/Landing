@@ -2136,7 +2136,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 "use strict";
 /* __next_internal_client_entry_do_not_use__  cjs */ 
 const { createProxy  } = __webpack_require__(1313);
-module.exports = createProxy("C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\node_modules\\next\\dist\\client\\image.js");
+module.exports = createProxy("C:\\Users\\jorge\\Repositories\\ACE\\Landing\\node_modules\\next\\dist\\client\\image.js");
  //# sourceMappingURL=image.js.map
 
 

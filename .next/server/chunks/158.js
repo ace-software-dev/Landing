@@ -2498,7 +2498,15 @@ async function fetchServerResponse(url, flightRouterState, nextUrl, prefetchKind
     try {
         let fetchUrl = url;
         if (true) {
-            if (false) {}
+            if (true) {
+                fetchUrl = new URL(url) // clone
+                ;
+                if (fetchUrl.pathname.endsWith("/")) {
+                    fetchUrl.pathname += "index.txt";
+                } else {
+                    fetchUrl.pathname += ".txt";
+                }
+            }
         }
         const res = await fetch(fetchUrl, {
             // Backwards compat for older browsers. `same-origin` is the default in modern browsers.
@@ -2509,7 +2517,11 @@ async function fetchServerResponse(url, flightRouterState, nextUrl, prefetchKind
         const contentType = res.headers.get("content-type") || "";
         let isFlightResponse = contentType === _approuterheaders.RSC_CONTENT_TYPE_HEADER;
         if (true) {
-            if (false) {}
+            if (true) {
+                if (!isFlightResponse) {
+                    isFlightResponse = contentType.startsWith("text/plain");
+                }
+            }
         }
         // If fetch returns something different than flight response handle it like a mpa navigation
         // If the fetch was not 200, we also handle it like a mpa navigation
@@ -5232,7 +5244,7 @@ function createProxy(moduleId) {
 "use strict";
 /* __next_internal_client_entry_do_not_use__  cjs */ 
 const { createProxy  } = __webpack_require__(1313);
-module.exports = createProxy("C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\node_modules\\next\\dist\\client\\components\\app-router.js");
+module.exports = createProxy("C:\\Users\\jorge\\Repositories\\ACE\\Landing\\node_modules\\next\\dist\\client\\components\\app-router.js");
  //# sourceMappingURL=app-router.js.map
 
 
@@ -5244,7 +5256,7 @@ module.exports = createProxy("C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open
 "use strict";
 /* __next_internal_client_entry_do_not_use__  cjs */ 
 const { createProxy  } = __webpack_require__(1313);
-module.exports = createProxy("C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\node_modules\\next\\dist\\client\\components\\error-boundary.js");
+module.exports = createProxy("C:\\Users\\jorge\\Repositories\\ACE\\Landing\\node_modules\\next\\dist\\client\\components\\error-boundary.js");
  //# sourceMappingURL=error-boundary.js.map
 
 
@@ -5256,7 +5268,7 @@ module.exports = createProxy("C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open
 "use strict";
 /* __next_internal_client_entry_do_not_use__  cjs */ 
 const { createProxy  } = __webpack_require__(1313);
-module.exports = createProxy("C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\node_modules\\next\\dist\\client\\components\\layout-router.js");
+module.exports = createProxy("C:\\Users\\jorge\\Repositories\\ACE\\Landing\\node_modules\\next\\dist\\client\\components\\layout-router.js");
  //# sourceMappingURL=layout-router.js.map
 
 
@@ -5268,7 +5280,7 @@ module.exports = createProxy("C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open
 "use strict";
 /* __next_internal_client_entry_do_not_use__  cjs */ 
 const { createProxy  } = __webpack_require__(1313);
-module.exports = createProxy("C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\node_modules\\next\\dist\\client\\components\\render-from-template-context.js");
+module.exports = createProxy("C:\\Users\\jorge\\Repositories\\ACE\\Landing\\node_modules\\next\\dist\\client\\components\\render-from-template-context.js");
  //# sourceMappingURL=render-from-template-context.js.map
 
 
@@ -5316,7 +5328,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 "use strict";
 /* __next_internal_client_entry_do_not_use__  cjs */ 
 const { createProxy  } = __webpack_require__(1313);
-module.exports = createProxy("C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\node_modules\\next\\dist\\client\\components\\static-generation-searchparams-bailout-provider.js");
+module.exports = createProxy("C:\\Users\\jorge\\Repositories\\ACE\\Landing\\node_modules\\next\\dist\\client\\components\\static-generation-searchparams-bailout-provider.js");
  //# sourceMappingURL=static-generation-searchparams-bailout-provider.js.map
 
 
@@ -5328,7 +5340,7 @@ module.exports = createProxy("C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open
 "use strict";
 /* __next_internal_client_entry_do_not_use__  cjs */ 
 const { createProxy  } = __webpack_require__(1313);
-module.exports = createProxy("C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\node_modules\\next\\dist\\client\\link.js");
+module.exports = createProxy("C:\\Users\\jorge\\Repositories\\ACE\\Landing\\node_modules\\next\\dist\\client\\link.js");
  //# sourceMappingURL=link.js.map
 
 

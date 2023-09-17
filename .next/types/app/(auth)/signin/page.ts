@@ -1,4 +1,4 @@
-// File: C:\Users\jorge\Repositories\ACE\Landing\open-react-template\app\(auth)\signin\page.tsx
+// File: C:\Users\jorge\Repositories\ACE\Landing\app\(auth)\signin\page.tsx
 import * as entry from '../../../../../app/(auth)/signin/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

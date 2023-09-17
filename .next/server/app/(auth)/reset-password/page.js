@@ -138,7 +138,7 @@ module.exports = require("next/dist/shared/lib/utils.js");
 
 /***/ }),
 
-/***/ 5406:
+/***/ 3400:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -202,7 +202,7 @@ __webpack_require__.r(__webpack_exports__);
         'reset-password',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7054)), "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\app\\(auth)\\reset-password\\page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7054)), "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\app\\(auth)\\reset-password\\page.tsx"],
           
         }]
       },
@@ -213,18 +213,18 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 970)), "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\app\\(auth)\\layout.tsx"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 970)), "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\app\\(auth)\\layout.tsx"],
           
         }
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3658)), "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\app\\layout.tsx"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3658)), "C:\\Users\\jorge\\Repositories\\ACE\\Landing\\app\\layout.tsx"],
           
         }
       ]
       }.children;
-    const pages = ["C:\\Users\\jorge\\Repositories\\ACE\\Landing\\open-react-template\\app\\(auth)\\reset-password\\page.tsx"];
+    const pages = ["C:\\Users\\jorge\\Repositories\\ACE\\Landing\\app\\(auth)\\reset-password\\page.tsx"];
 
     
     
@@ -353,7 +353,7 @@ function ResetPassword() {
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [683,158,863,822], () => (__webpack_exec__(5406)));
+var __webpack_exports__ = __webpack_require__.X(0, [683,158,45,751], () => (__webpack_exec__(3400)));
 module.exports = __webpack_exports__;
 
 })();
