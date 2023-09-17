@@ -7,7 +7,7 @@ name: Deploy Next.js site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["ace-16-implement-landing-template "]
+    branches: ["ace-16-implement-landing-template"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
