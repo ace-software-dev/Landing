@@ -4,6 +4,37 @@ import { Inter, Architects_Daughter } from 'next/font/google'
 
 import Header from '@/components/ui/header'
 import Banner from '@/components/banner'
+import localFont from '@next/font/local'
+
+const filson_pro = localFont({
+  src: [
+    {
+      path: '../public/fonts/FilsonProLight.otf',
+      weight: '200'
+    },
+    {
+      path: '../public/fonts/FilsonProBook.otf',
+      weight: '300'
+    },
+    {
+      path: '../public/fonts/FilsonProRegular.otf',
+      weight: '400'
+    },
+    {
+      path: '../public/fonts/FilsonProMedium.otf',
+      weight: '500'
+    },
+    {
+      path: '../public/fonts/FilsonProBold.otf',
+      weight: '600'
+    },
+    {
+      path: '../public/fonts/FilsonProHeavy.otf',
+      weight: '700'
+    },
+  ],
+  variable: '--font-filson-pro'
+})
 
 const inter = Inter({
   subsets: ['latin'],
@@ -30,14 +61,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-gray-900 text-gray-200 tracking-tight`}>
+      <body className={`${filson_pro.variable} ${inter.variable} ${architects_daughter.variable} font-filson-pro antialiased bg-slate-900 text-gray-200 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
           {children}
-          <Banner />
         </div>
       </body>
     </html>
   )
 }
- 

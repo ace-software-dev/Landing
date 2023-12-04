@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'radial-gradient-blue': 'radial-gradient(50% 50% at 50% 50%, #41AAE5 0%, rgba(65, 170, 229, 0.00) 100%)',
+        'radial-gradient-purple': 'radial-gradient(50% 50% at 50% 50%, #865DEE 0%, rgba(134, 93, 238, 0.00) 100%)',
+      },
       colors: {
         gray: {
           100: '#EBF1F5',
@@ -38,7 +42,8 @@ module.exports = {
       },
       fontFamily: {
         inter: ['var(--font-inter)', 'sans-serif'],
-        'architects-daughter': ['var(--font-architects-daughter)', 'sans-serif']
+        'architects-daughter': ['var(--font-architects-daughter)', 'sans-serif'],
+        'filson-pro': ['var(--font-filson-pro)', 'sans-serif'],
       },
       fontSize: {
         xs: '0.75rem',
