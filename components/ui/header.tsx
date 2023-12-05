@@ -7,7 +7,7 @@ export default function Header() {
         <div className="w-full h-[34.60px]">
           <img src = "/images/AceLogo.svg" alt="ACE Logo"/>
         </div>
-        <Button>Contáctanos</Button>
+        <Button classes='text-lg'>Contáctanos</Button>
       </div>
       <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-white"></div>
     </header>
