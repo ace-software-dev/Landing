@@ -24,7 +24,7 @@ export default function DefaultLayout({
 
   return (
     <>
-      <main className="grow">
+      <main className="grow mt-[70px]">
 
         {children}
 
