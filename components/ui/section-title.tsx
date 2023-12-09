@@ -1,17 +1,17 @@
+import Title from "./title"
+
 interface SectionTitleProps {
-  section: string,
+  subtitle: string,
   title: string,
 }
 
-export default function SectionTitle({section, title}: SectionTitleProps) {
+export default function SectionTitle({subtitle, title}: SectionTitleProps) {
   return (
     <div className='flex flex-col justify-center items-center'>
       <div className="text-purple-300 text-2xl font-normal">
-        {section}
+        {subtitle}
       </div>
-      <div className="bg-gradient-to-r from-white/60 via-white to-white/60 inline-block text-transparent bg-clip-text text-5xl font-medium">
-        {title}
-      </div>
+      <Title>{title}</Title>
     </div>
   )
 }
