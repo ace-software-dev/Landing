@@ -61,7 +61,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${filson_pro.variable} ${inter.variable} ${architects_daughter.variable} font-filson-pro antialiased bg-slate-900 text-gray-200 tracking-tight`}>
+      <body className={`${filson_pro.variable} ${inter.variable} ${architects_daughter.variable} font-filson-pro antialiased bg-blue-10 text-gray-200 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
           {children}

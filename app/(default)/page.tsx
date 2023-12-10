@@ -8,6 +8,7 @@ import Features from '@/components/features'
 import Newsletter from '@/components/newsletter'
 import Zigzag from '@/components/zigzag'
 import Testimonials from '@/components/testimonials'
+import Servicios from '@/components/servicios'
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Zigzag />
-      <Testimonials />
+      <Servicios />
       <Newsletter />
     </>
   )
