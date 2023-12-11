@@ -24,7 +24,7 @@ export default function DefaultLayout({
 
   return (
     <>
-      <main className="grow">
+      <main className="flex justify-center">
 
         {children}
 
