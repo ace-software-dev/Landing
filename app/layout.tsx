@@ -1,10 +1,13 @@
+'use client'
+
 import './css/style.css'
-
-import { Inter, Architects_Daughter } from 'next/font/google'
-
 import Header from '@/components/ui/header'
-import Banner from '@/components/banner'
 import localFont from '@next/font/local'
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import Footer from '@/components/ui/footer'
+
 
 const filson_pro = localFont({
   src: [
@@ -36,35 +39,32 @@ const filson_pro = localFont({
   variable: '--font-filson-pro'
 })
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap'
-})
-
-const architects_daughter = Architects_Daughter({
-  subsets: ['latin'],
-  variable: '--font-architects-daughter',
-  weight: '400',
-  display: 'swap'
-})
-
-export const metadata = {
-  title: 'ACE Software',
-  description: 'Desarrollo de Software / Software Development',
-}
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      disable: 'phone',
+      duration: 600,
+      easing: 'ease-out-sine',
+    })
+  })
+
   return (
     <html lang="en">
-      <body className={`${filson_pro.variable} ${inter.variable} ${architects_daughter.variable} font-filson-pro antialiased bg-blue-10 text-gray-200 tracking-tight`}>
+      <body className={`${filson_pro.variable} font-filson-pro antialiased bg-slate-900 text-gray-200 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
-          {children}
+          <main className="grow mt-[70px]">
+
+            {children}
+
+          </main>
+          <Footer />
         </div>
       </body>
     </html>
