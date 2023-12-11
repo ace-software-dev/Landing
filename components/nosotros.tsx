@@ -1,19 +1,22 @@
+'use client'
+
+import Spline from "@splinetool/react-spline"
 import SectionTitle from "./ui/section-title"
 import Title from "./ui/title"
 
 export default function Nosotros() {
     return (
     <section>
-        <div className="flex-col justify-center">
+        <div className="flex flex-col">
             <SectionTitle subtitle={"Nuestro valor agregado"} title={"¿Por qué nosotros?"}></SectionTitle>
-            <div className="text-center pb-12 md:pb-20">
-                <p className="text-center text-2xl">Tendrás paz mental mientras nosotros trabajamos, manteniéndote en control con actualizaciones constantes y total transparencia</p>
+            <div className=" flex justify-center">
+                <p className="text-center text-2xl w-[70%]">Tendrás paz mental mientras nosotros trabajamos, manteniéndote en control con actualizaciones constantes y total transparencia</p>
             </div>
 
 
             <div className="flex flex-col gap-2">
                 <div className=" w-full flex justify-between">
-                    <img className="w-[45%]" src="https://via.placeholder.com/527x492" />
+                    <Spline className="w-[45%]" scene="https://prod.spline.design/ARneM6HjXa7agl3K/scene.splinecode" />
 
                     <div className="w-[45%] flex flex-col justify-around">
                         <div className="flex items-start flex-col">
@@ -33,7 +36,7 @@ export default function Nosotros() {
                 </div>
 
                 <div className=" w-full flex justify-between flex-row-reverse">
-                    <img className="w-[49%]" src="https://via.placeholder.com/527x492" />
+                <Spline className="w-[49%]" scene="https://prod.spline.design/2xwln-zE7r5pDrBG/scene.splinecode" />
 
                     <div className="w-[49%] flex flex-col justify-around">
                         <div className="flex items-start flex-col">
