@@ -5,6 +5,7 @@ import { Inter, Architects_Daughter } from 'next/font/google'
 import Header from '@/components/ui/header'
 import Banner from '@/components/banner'
 import localFont from '@next/font/local'
+import Hero from '@/components/hero'
 
 const filson_pro = localFont({
   src: [
@@ -64,6 +65,7 @@ export default function RootLayout({
       <body className={`${filson_pro.variable} ${inter.variable} ${architects_daughter.variable} font-filson-pro antialiased bg-slate-900 text-gray-200 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
+          <Hero />
           {children}
         </div>
       </body>
