@@ -7,16 +7,19 @@ import Title from "./ui/title"
 export default function Nosotros() {
     return (
     <section>
-        <div className="flex flex-col">
+        <div className="flex flex-col ">
             <SectionTitle subtitle={"Nuestro valor agregado"} title={"¿Por qué nosotros?"}></SectionTitle>
             <div className=" flex justify-center">
                 <p className="text-center text-2xl w-[70%]">Tendrás paz mental mientras nosotros trabajamos, manteniéndote en control con actualizaciones constantes y total transparencia</p>
             </div>
 
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col ">
                 <div className=" w-full flex justify-between">
-                    <Spline className="w-[45%]" scene="https://prod.spline.design/ARneM6HjXa7agl3K/scene.splinecode" />
+
+                    <div className="w-[45%]"  style={{height: "50vh"}}>
+                        <Spline scene="https://prod.spline.design/ARneM6HjXa7agl3K/scene.splinecode" />
+                    </div>
 
                     <div className="w-[45%] flex flex-col justify-around">
                         <div className="flex items-start flex-col">
@@ -36,7 +39,9 @@ export default function Nosotros() {
                 </div>
 
                 <div className=" w-full flex justify-between flex-row-reverse">
-                <Spline className="w-[49%]" scene="https://prod.spline.design/2xwln-zE7r5pDrBG/scene.splinecode" />
+                    <div className=" flex w-[45%]" style={{height: "70vh"}}>
+                        <Spline scene="https://prod.spline.design/2xwln-zE7r5pDrBG/scene.splinecode" />
+                    </div>
 
                     <div className="w-[49%] flex flex-col justify-around">
                         <div className="flex items-start flex-col">
