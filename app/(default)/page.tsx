@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Home - Open PRO',
-  description: 'Page description',
+  title: 'ACE Software',
+  description: 'Desarrollo de Software / Software Development',
 }
 
 import Nosotros from '@/components/nosotros'
