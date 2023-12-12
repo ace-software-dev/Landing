@@ -7,7 +7,7 @@ import Title from "./ui/title"
 export default function Nosotros() {
     return (
     <section>
-        <div className="flex flex-col ">
+        <div className="flex flex-col  py-14">
             <SectionTitle subtitle={"Nuestro valor agregado"} title={"¿Por qué nosotros?"}></SectionTitle>
             <div className=" flex justify-center">
                 <p className="text-center text-2xl w-[70%]">Tendrás paz mental mientras nosotros trabajamos, manteniéndote en control con actualizaciones constantes y total transparencia</p>
@@ -39,7 +39,7 @@ export default function Nosotros() {
                 </div>
 
                 <div className=" w-full flex justify-between flex-row-reverse">
-                    <div className=" flex w-[45%]" style={{height: "70vh"}}>
+                    <div className=" flex w-[45%]" style={{height: "60vh"}}>
                         <Spline scene="https://prod.spline.design/2xwln-zE7r5pDrBG/scene.splinecode" />
                     </div>
 
