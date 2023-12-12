@@ -1,5 +1,13 @@
 {
   "global": {
-    "ctaButton": "Contáctanos"
+    "ctaButton": "Contáctanos",
+    "en": "EN",
+    "es": "ES"
+  },
+  "topbar": {
+    "home": "Inicio",
+    "us": "Nosotros",
+    "services": "Servicios",
+    "clients": "Clientes"
   }
 }
