@@ -9,5 +9,9 @@
     "us": "About Us",
     "services": "Services",
     "clients": "Clients"
+  },
+  "header": {
+    "title": "¡Hi! We are ACE, a company specialized in software development for",
+    "slogan": "We love to see you grow"
   }
 }
