@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import SectionTitle from './ui/section-title'
-import Browser from '@/public/images/Browser.png'
-import Rocket from '@/public/images/Rocket.png'
-import Mobile from '@/public/images/Mobile.png'
+import Browser from '@/public/images/Browser.svg'
+import Rocket from '@/public/images/Rocket.svg'
+import Mobile from '@/public/images/Mobile.svg'
 
 export default function Servicios() {
   return (
