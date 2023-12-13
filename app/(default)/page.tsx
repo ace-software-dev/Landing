@@ -10,7 +10,7 @@ import Testimonials from '@/components/testimonials'
 
 export default function Home() {
   return (
-    <div className='flex flex-col w-4/5 justify-center'>
+    <div className='mx-auto' id='body'>
       <Nosotros />
       <Zigzag />
       <Testimonials />

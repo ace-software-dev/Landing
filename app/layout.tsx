@@ -65,7 +65,10 @@ export default function RootLayout({
       <body className={`${filson_pro.variable} ${inter.variable} ${architects_daughter.variable} font-filson-pro antialiased bg-blue-1000 text-gray-200 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
-          <Hero />
+
+          <div className='grow mt-[70px]'>
+            <Hero />
+          </div>
           {children}
         </div>
       </body>
