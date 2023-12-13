@@ -4,6 +4,7 @@ import Spline from '@splinetool/react-spline'
 import Button from './ui/button'
 import Image from 'next/image'
 import getDictionary from '@/app/dictionaries';
+import TextRolling from './ui/text-rolling';
 
 export default function Hero() {
   const dict = getDictionary();
@@ -25,9 +26,13 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="flex justify-between w-full">
-            <div className="flex justify-center flex-col gap-10 w-2/3" data-aos="fade-up">
+            <div className="flex justify-center flex-col gap-10 w-1/2" data-aos="fade-up">
               <div className="text-4xl">
                 {dict.header.title}
+                <div className="inline-flex h-14">
+                  <p>{dict.header.title2}</p>
+                  <TextRolling />
+                </div>
               </div>
               <div className="flex gap-8">
                 <Button>{dict.global.ctaButton}</Button>
@@ -37,21 +42,21 @@ export default function Hero() {
                     alt='Instagram Logo Icon'
                     width={32}
                     height={32}
-                    className='hover:cursor-pointer'
+                    className='hover:cursor-pointer hover:opacity-90'
                   />
                   <Image
                     src="/images/linkedin_icon.svg"
                     alt='Instagram Logo Icon'
                     width={32}
                     height={32}
-                    className='hover:cursor-pointer'
+                    className='hover:cursor-pointer hover:opacity-90'
                   />
                   <Image
                     src="/images/facebook_icon.svg"
                     alt='Instagram Logo Icon'
                     width={32}
                     height={32}
-                    className='hover:cursor-pointer'
+                    className='hover:cursor-pointer hover:opacity-90'
                   />
                 </div>
               </div>

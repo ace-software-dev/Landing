@@ -11,7 +11,16 @@
     "clients": "Clients"
   },
   "header": {
-    "title": "¡Hi! We are ACE, a company specialized in software development for",
+    "title": "¡Hi! We are ACE, a company specialized in software ",
+    "title2": "development for",
+    "options": [
+      "innovating",
+      "growing",
+      "transforming",
+      "productivity",
+      "collaborating",
+      "the future"
+    ],
     "slogan": "We love to see you grow"
   }
 }
