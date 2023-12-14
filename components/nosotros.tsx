@@ -7,7 +7,7 @@ import Title from "./ui/title"
 export default function Nosotros() {
     return (
     <section>
-        <div className="flex flex-col max-w-6xl px-4 sm:px-6 py-14 gap-11">
+        <div className="flex flex-col max-w-6xl px-4 sm:px-6 py-14 gap-11 w-[100vw]">
             <div>
                 <SectionTitle subtitle={"Nuestro valor agregado"} title={"¿Por qué nosotros?"}></SectionTitle>
                 <div className=" flex justify-center">
@@ -17,13 +17,13 @@ export default function Nosotros() {
 
 
             <div className="flex flex-col ">
-                <div className=" w-full flex justify-between">
+                <div className=" w-full grid grid-cols-1 md:grid-cols-2 justify-between">
 
-                    <div className="w-[45%]">
+                    <div className="">
                         <Spline  id="ui-ux"scene="https://prod.spline.design/ARneM6HjXa7agl3K/scene.splinecode" data-aos="fade-up" />
                     </div>
 
-                    <div className="w-[45%] flex flex-col gap-12">
+                    <div className=" flex flex-col gap-12">
                     <div className="flex items-start flex-col" data-aos="fade-right">
                             <Title size="text-4xl">Experiencia de Usuario</Title>
                             <p className="text-xl">
@@ -41,8 +41,8 @@ export default function Nosotros() {
                     </div>
                 </div>
 
-                <div className=" w-full flex justify-between flex-row-reverse" >
-                    <div className=" flex w-[45%]">
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 justify-between">
+                    <div className=" flex w-[45%] md:order-last">
                         <Spline  id="chica-cool" scene="https://prod.spline.design/2xwln-zE7r5pDrBG/scene.splinecode" />
                     </div>
 
