@@ -20,13 +20,3 @@
 [x-cloak=""] {
     display: none;
 }
-
-#chica-cool canvas {
-    width: 32.625rem !important;
-    height: 22rem !important;
-}
-
-#ui-ux canvas {
-    width: 27.625rem !important;
-    height: 21.06rem !important;
-}
