@@ -20,7 +20,7 @@ export default function Nosotros() {
                 <div className=" w-full grid grid-cols-1 md:grid-cols-2 justify-between">
 
                     <div className="">
-                        <Spline  id="ui-ux"scene="https://prod.spline.design/ARneM6HjXa7agl3K/scene.splinecode" data-aos="fade-up" />
+                        <img src="\images\ui-ux.png" alt="ui-ux" />
                     </div>
 
                     <div className=" flex flex-col gap-12">
@@ -42,8 +42,8 @@ export default function Nosotros() {
                 </div>
 
                 <div className="w-full grid grid-cols-1 md:grid-cols-2 justify-between">
-                    <div className=" flex w-[45%] md:order-last">
-                        <Spline  id="chica-cool" scene="https://prod.spline.design/2xwln-zE7r5pDrBG/scene.splinecode" />
+                    <div className=" flex md:order-last ">
+                        <img  className="object-cover object-center" src="\images\chica-ace.png" alt="chica-ace" />
                     </div>
 
                     <div className="w-[49%] flex flex-col gap-12">
