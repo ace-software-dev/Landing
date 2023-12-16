@@ -107,6 +107,9 @@ module.exports = {
       scale: {
         '98': '.98'
       },
+      screens: {
+        'xs': '425px',
+      },
     },
   },
   plugins: [
