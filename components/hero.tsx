@@ -29,7 +29,7 @@ export default function Hero() {
             <div className="flex md:col-span-1 justify-center flex-col gap-10 w-[28rem] sm:w-9/12 md:w-[35rem] md:items-start xl:w-[40rem]" data-aos="fade-up">
               <div className="flex flex-col text-[1.65rem] sm:text-3xl md:text-[1.8rem] xl:text-4xl">
                 <span className='text-center md:text-start'>{dict.header.title}</span>
-                <div className="inline-flex justify-center h-9 sm:h-12 md:justify-start">
+                <div className="inline-flex justify-center h-9 sm:h-12 md:h-14 md:justify-start">
                   <span>{dict.header.title2}</span>
                   <TextRolling />
                 </div>
