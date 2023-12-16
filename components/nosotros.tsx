@@ -41,7 +41,7 @@ export default function Nosotros() {
                     </div>
                 </div>
 
-                <div className="w-full grid grid-cols-1 md:grid-cols-2 justify-between">
+                <div className="grid grid-cols-1 md:grid-cols-2 justify-between">
                     <div className=" flex md:order-last ">
                         <img  className="object-cover object-center" src="\images\chica-ace.png" alt="chica-ace" />
                     </div>
