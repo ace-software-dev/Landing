@@ -6,14 +6,14 @@ export const metadata = {
 import Nosotros from '@/components/nosotros'
 import Newsletter from '@/components/newsletter'
 import Zigzag from '@/components/zigzag'
-import Testimonials from '@/components/testimonials'
+import Servicios from '@/components/servicios'
 
 export default function Home() {
   return (
     <div className='mx-auto' id='body'>
       <Nosotros />
       <Zigzag />
-      <Testimonials />
+      <Servicios />
       <Newsletter />
     </div>
 
