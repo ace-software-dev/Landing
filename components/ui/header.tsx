@@ -48,7 +48,7 @@ export default function Header() {
             <Link href="/en" locale="en" onClick={() => setLocaleCookie('en')}>
               <span className={locale == 'en'? 'font-bold' : ''}> {dict.global.en} </span>
             </Link>
-            <span> / </span>
+            <span> &nbsp;/&nbsp;</span>
             <Link href="/" locale="es" onClick={() => setLocaleCookie('es')}>
             <span className={locale == 'es'? 'font-bold' : ''}> {dict.global.es} </span>
             </Link>
