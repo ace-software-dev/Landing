@@ -1,10 +1,10 @@
 'use client'
 
-import Spline from '@splinetool/react-spline'
 import Button from './ui/button'
 import Image from 'next/image'
 import getDictionary from '@/app/dictionaries';
 import TextRolling from './ui/text-rolling';
+import { Player } from '@lottiefiles/react-lottie-player';
 
 export default function Hero() {
   const dict = getDictionary();
@@ -63,6 +63,14 @@ export default function Hero() {
               <div className="text-3xl font-book hidden md:block md:text-2xl">
                 {dict.header.slogan}
               </div>
+            </div>
+            <div className='flex relative -right-2 md:col-span-1' data-aos="fade-up">
+              <Player
+                keepLastFrame={true}
+                autoplay={true}
+                src="/animations/computer_phone.json"
+                className='h-full'
+              ></Player>
             </div>
           </div>
         </div>
