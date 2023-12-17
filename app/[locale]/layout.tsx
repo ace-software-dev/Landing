@@ -9,6 +9,7 @@ import 'aos/dist/aos.css';
 import Footer from '@/components/ui/footer';
 import { useCurrentLocale } from 'next-i18n-router/client';
 import i18nConfig from '@/i18nConfig';
+import Hero from '@/components/hero';
 
 
 const filson_pro = localFont({
@@ -59,10 +60,13 @@ export default function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${filson_pro.variable} font-filson-pro antialiased bg-slate-900 text-gray-200 tracking-tight`}>
+      <body className={`${filson_pro.variable} font-filson-pro antialiased bg-blue-10 text-gray-200 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
-          <main className="grow mt-[70px]">
+          <div className="grow mt-[70px]" >
+            <Hero />
+          </div>
+          <main className="flex justify-center">
 
             {children}
 
