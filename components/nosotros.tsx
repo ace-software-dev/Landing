@@ -7,19 +7,18 @@ import Title from "./ui/title"
 export default function Nosotros() {
     return (
     <section>
-        <div className="flex flex-col max-w-6xl px-4 sm:px-6 py-14 gap-11 w-[100vw]">
-            <div>
+        <div className="flex flex-col max-w-6xl px-16 xl:px-0 py-14 gap-11 w-[100vw]">
+            <div className="text-center">
                 <SectionTitle subtitle={"Nuestro valor agregado"} title={"¿Por qué nosotros?"}></SectionTitle>
                 <div className=" flex justify-center">
-                    <p className="text-center text-2xl w-[70%]">Tendrás paz mental mientras nosotros trabajamos, manteniéndote en control con actualizaciones constantes y total transparencia</p>
+                    <p className="text-center text-2xl md:w-[70%]">Tendrás paz mental mientras nosotros trabajamos, manteniéndote en control con actualizaciones constantes y total transparencia</p>
                 </div>
             </div>
 
 
             <div className="flex flex-col gap-6 ">
-                <div className=" w-full grid grid-cols-1 md:grid-cols-2 justify-between gap-x-24">
-
-                    <div>
+                <div className=" w-full grid grid-cols-1 md:grid-cols-2 justify-between gap-4 md:gap-24">
+                    <div className=" px-14 md:px-0">
                         <img src="\images\ui-ux.png" alt="ui-ux" />
                     </div>
 
@@ -41,9 +40,9 @@ export default function Nosotros() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 justify-between">
+                <div className="grid grid-cols-1 md:grid-cols-2 justify-between gap-4 md:gap-24 xl:gap-0   ">
                     <div className=" flex md:order-last ">
-                        <img  className="object-cover object-center" src="\images\chica-ace.png" alt="chica-ace" />
+                        <img  className="object-scale-down object-center" src="\images\chica-ace.png" alt="chica-ace" />
                     </div>
 
                     <div className="flex flex-col gap-12">
