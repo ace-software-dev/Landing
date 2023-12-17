@@ -16,18 +16,18 @@ export default function Nosotros() {
             </div>
 
 
-            <div className="flex flex-col ">
-                <div className=" w-full grid grid-cols-1 md:grid-cols-2 justify-between">
+            <div className="flex flex-col gap-6 ">
+                <div className=" w-full grid grid-cols-1 md:grid-cols-2 justify-between gap-x-24">
 
-                    <div className="">
+                    <div>
                         <img src="\images\ui-ux.png" alt="ui-ux" />
                     </div>
 
-                    <div className=" flex flex-col gap-12">
-                    <div className="flex items-start flex-col" data-aos="fade-right">
+                    <div className=" flex flex-col gap-12 justify-center">
+                        <div className="flex items-start flex-col" data-aos="fade-right">
                             <Title size="text-4xl">Experiencia de Usuario</Title>
                             <p className="text-xl">
-                                Compromiso con los más altos estándares de calidad, ofrecemos excelencia
+                                Diseñamos con el usuario en mente, asegurando que tu software sea intuitivo y agradable
                             </p>
                         </div>
                         
@@ -46,7 +46,7 @@ export default function Nosotros() {
                         <img  className="object-cover object-center" src="\images\chica-ace.png" alt="chica-ace" />
                     </div>
 
-                    <div className="w-[49%] flex flex-col gap-12">
+                    <div className="flex flex-col gap-12">
                         <div className="flex items-start flex-col" data-aos="fade-right">
                                 <Title size="text-4xl">Soluciones personalizadas</Title>
                                 <p className="text-xl">
