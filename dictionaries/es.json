@@ -9,5 +9,18 @@
     "us": "Nosotros",
     "services": "Servicios",
     "clients": "Clientes"
+  },
+  "header": {
+    "title": "¡Hola! Somos ACE, una empresa especializada en el desarrollo de ",
+    "title2": "software para",
+    "options": [
+      "innovar",
+      "crecer",
+      "transformar",
+      "productividad",
+      "colaborar",
+      "el futuro"
+    ],
+    "slogan": "Amamos verte crecer"
   }
 }
