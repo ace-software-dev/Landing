@@ -5,9 +5,18 @@ import Image from 'next/image'
 import getDictionary from '@/app/dictionaries';
 import TextRolling from './ui/text-rolling';
 import { Player } from '@lottiefiles/react-lottie-player';
+import { useEffect, useRef, useState } from 'react';
+import React from 'react';
 
 export default function Hero() {
   const dict = getDictionary();
+  const playerRef =  React.createRef<Player>()
+  
+  const handleAnimationLoaded = () => {
+    playerRef.current?.play();
+  };
+
+  
 
   return (
     <section>
@@ -66,8 +75,14 @@ export default function Hero() {
             </div>
             <div className='flex relative -right-2 md:col-span-1' data-aos="fade-up">
               <Player
+                ref={playerRef}
+                // esta linea se encarga de darle play a la animacion cuando se carga
+                onEvent={event => {
+                  if (event === 'instanceSaved'){
+                    handleAnimationLoaded();
+                  } 
+                }}
                 keepLastFrame={true}
-                autoplay={true}
                 src="/animations/computer_phone.json"
                 className='h-full'
               ></Player>
