@@ -3,6 +3,7 @@
 import Spline from "@splinetool/react-spline"
 import SectionTitle from "./ui/section-title"
 import Title from "./ui/title"
+import { Player } from "@lottiefiles/react-lottie-player"
 
 export default function Nosotros() {
     return (
@@ -19,7 +20,12 @@ export default function Nosotros() {
             <div className="flex flex-col gap-6 ">
                 <div className=" w-full grid grid-cols-1 md:grid-cols-2 justify-between gap-4 md:gap-24">
                     <div className=" px-14 md:px-0">
-                        <img src="\images\ui-ux.png" alt="ui-ux" />
+                    <Player
+                        hover={true}
+                        src="/animations/UI_UX.json"
+                        className='h-full'
+                    ></Player>
+                        
                     </div>
 
                     <div className=" flex flex-col gap-12 justify-center">
@@ -42,7 +48,12 @@ export default function Nosotros() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 justify-between gap-4 md:gap-24 xl:gap-0   ">
                     <div className=" flex md:order-last ">
-                        <img  className="object-scale-down object-center" src="\images\chica-ace.png" alt="chica-ace" />
+                        <Player
+                            hover={true}
+                            src="/animations/Girl_Working.json"
+                            className='h-full'
+                        ></Player>
+                        {/* <img  className="object-scale-down object-center" src="\images\chica-ace.png" alt="chica-ace" /> */}
                     </div>
 
                     <div className="flex flex-col gap-12">
