@@ -7,9 +7,27 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        "spin-words": 'spin_words 8s infinite',
+      },
+      keyframes: {
+        "spin_words": {
+          '8%': { transform: 'translateY(-112%)' },
+          '20%': { transform: 'translateY(-100%)' },
+          '28%': { transform: 'translateY(-212%)' },
+          '40%': { transform: 'translateY(-200%)' },
+          '48%': { transform: 'translateY(-312%)' },
+          '60%': { transform: 'translateY(-300%)' },
+          '68%': { transform: 'translateY(-412%)' },
+          '80%': { transform: 'translateY(-400%)' },
+          '88%': { transform: 'translateY(-512%)' },
+          '100%': { transform: 'translateY(-500%)' },
+        }
+      },
       backgroundImage: {
         'radial-gradient-blue': 'radial-gradient(50% 50% at 50% 50%, #41AAE5 0%, rgba(65, 170, 229, 0.00) 100%)',
         'radial-gradient-purple': 'radial-gradient(50% 50% at 50% 50%, #865DEE 0%, rgba(134, 93, 238, 0.00) 100%)',
+        'linear-text-gradient': 'linear-gradient(180deg, #EEE2FE 0%, #6B39ED 100%)',
       },
       colors: {
         gray: {
@@ -89,6 +107,9 @@ module.exports = {
       },
       scale: {
         '98': '.98'
+      },
+      screens: {
+        'xs': '425px',
       },
     },
   },
