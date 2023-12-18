@@ -5,13 +5,12 @@ import Image from 'next/image'
 import getDictionary from '@/app/dictionaries';
 import TextRolling from './ui/text-rolling';
 import { Player } from '@lottiefiles/react-lottie-player';
-import { useEffect, useRef, useState } from 'react';
 import React from 'react';
 
 export default function Hero() {
   const dict = getDictionary();
   const playerRef =  React.createRef<Player>()
-  
+
   const handleAnimationLoaded = () => {
     playerRef.current?.play();
   };
