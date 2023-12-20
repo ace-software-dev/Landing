@@ -68,6 +68,7 @@ export default function MobileMenu() {
         className="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out"
         style={mobileNavOpen ? { maxHeight: mobileNav.current?.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: 0.8 }}
       >
+        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-white"></div>
         <ul className="bg-slate-900 px-4 py-3 font-medium rounded bg-opacity-95">
           <li>
             <Link href="/">
@@ -109,6 +110,7 @@ export default function MobileMenu() {
             </div>
           </li>
         </ul>
+        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-white opacity-25"></div>
       </nav>
     </div>
   )
