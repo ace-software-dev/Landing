@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.14",
+    "@lottiefiles/react-lottie-player": "^3.5.3",
     "@next/font": "^14.0.3",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.505",
@@ -19,6 +20,7 @@
     "@types/react-dom": "^18.2.4",
     "aos": "^3.0.0-beta.6",
     "next": "^14.0.2",
+    "next-i18n-router": "^5.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "^5.0.4"
