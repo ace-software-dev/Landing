@@ -19,7 +19,7 @@ export default function PreviousClients() {
                 <div className="p-4 flex items-center justify-between">
                     {images.map((imageUrl, index) => (
                     <div key={index}>
-                        <Image src={imageUrl} alt={`Image ${index + 1}`} className="w-64 h-auto rounded-md" />
+                        <Image src={imageUrl} alt={`Image ${index + 1}`} className="w-64 h-auto" />
                     </div>
                     ))}
                 </div>

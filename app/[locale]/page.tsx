@@ -9,6 +9,7 @@ import Newsletter from '@/components/newsletter';
 import Zigzag from '@/components/zigzag';
 import WhatsappButton from '@/components/whatsapp-button';
 import Servicios from '@/components/servicios';
+import PreviousClients from '@/components/previous-clients'
 
 export default function Home() {
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Features />
       <Zigzag />
       <Servicios />
+      <PreviousClients />
       <Newsletter />
       <WhatsappButton phoneNumber='+524423792074' message='Hola ACE! Estoy interesado en sus servicios de desarrollo de Software.'/>
     </>
