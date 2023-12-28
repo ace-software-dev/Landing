@@ -11,7 +11,7 @@ export default function Title({children, classes, size}: TitleProps) {
   return (
     <div className='flex flex-col justify-center items-center'>
       <div className={`
-        bg-gradient-to-r from-white/60 via-white to-white/60 inline-block
+        text-center bg-gradient-to-r from-white/60 via-white to-white/60 inline-block
         text-transparent bg-clip-text ${size} font-medium ${classes}
       `}>
         {children}
