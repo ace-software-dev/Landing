@@ -1,6 +1,5 @@
 'use client'
 
-import Spline from "@splinetool/react-spline"
 import SectionTitle from "./ui/section-title"
 import Title from "./ui/title"
 import { Player } from "@lottiefiles/react-lottie-player"
@@ -53,7 +52,6 @@ export default function Nosotros() {
                             src="/animations/Girl_Working.json"
                             className='h-full'
                         ></Player>
-                        {/* <img  className="object-scale-down object-center" src="\images\chica-ace.png" alt="chica-ace" /> */}
                     </div>
 
                     <div className="flex flex-col gap-12">
