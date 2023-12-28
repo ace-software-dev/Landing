@@ -43,7 +43,7 @@ export default function Hero() {
                 </div>
               </div>
               <div className="flex gap-8 justify-center items-center flex-col md:justify-start md:flex-row">
-                <Button>{dict.global.ctaButton}</Button>
+                <Button goTo='https://calendly.com/jorgeramirez-software/entendiendo-tus-necesidades'>{dict.header.ctaButton}</Button>
                 <div className="inline-flex gap-2 md:gap-4 h-8">
                   <Image
                     src="/images/instagram_icon.svg"
