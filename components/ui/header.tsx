@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <header className="fixed w-full z-30 top-0">
-      <div className="sticky top-0 w-full h-[70px] px-8 py-3 bg-slate-900 bg-opacity-95 justify-between items-center inline-flex">
+      <div className="sticky top-0 w-full h-[70px] px-8 py-3 bg-blue-1001 bg-opacity-95 justify-between items-center inline-flex">
         <Link href="/">
           <div className="w-24 flex items-center">
             <img src = "/images/AceLogo.svg" alt="ACE Logo" className="mt-2 mb-2 mr-2 ml-2" />
