@@ -14,9 +14,9 @@ export default function Contactanos() {
                     </div>
                 </div>
                 <div className="justify-center items-center gap-24 inline-flex">
-                    <img className="w-[234px] h-[300px]" src={OrangeRocket} />
+                    <img className="w-[234px] h-[300px]" src='\images\CoolRocket.svg' />
                     <form>
-                        <div className="w-[760px] flex-col justify-start items-center gap-8 inline-flex">
+                        <div className="w-[760px] flex-col justify-start items-center gap-7 inline-flex">
                             <div className="self-stretch h-[87px] flex-col justify-start items-start gap-2 flex">
                                 <label className="text-slate-50 text-base font-medium">Nombre completo*</label>
                                 <input type="text" id="nombre" name="nombre" placeholder="Nombre" required className="self-stretch px-4 py-[18px] bg-slate-700 rounded-xl gap-2.5 text-slate-50 text-xl focus:outline-none" />
@@ -31,12 +31,9 @@ export default function Contactanos() {
                             </div>
                             <div className="self-stretch h-[187px] flex-col justify-start items-start gap-2 flex">
                                 <label className="text-slate-50 text-base font-medium">Cuéntanos un poco más de tu idea</label>
-                                <input type="text" id="numero" name="numero" placeholder="Escribe aquí..." required className="self-stretch h-40 px-4 py-[18px] bg-slate-700 rounded-xl justify-start items-start gap-2.5 inline-flex text-slate-50 text-xl focus:outline-none" />
+                                <input type="text" id="numero" name="numero" placeholder="Escribe aquí..." required className="self-stretch h-40 px-4 py-[18px] bg-slate-700 rounded-xl placeholder:justify-top placeholder:items-start gap-2.5 inline-flex text-slate-50 text-xl focus:outline-none" />
                             </div>
-                            <div className="px-8 py-4 bg-gradient-to-l from-violet-600 to-cyan-600 rounded-[52px] justify-center items-center inline-flex">
-                                <div className="text-slate-50 text-2xl font-bold">Contáctanos</div>
-                            </div>
-                            <Button classes='text-lg'>Contáctanos</Button>
+                            <Button classes='px-8 py-4  text-slate-50 text-lg font-bold'>Contáctanos</Button>
                         </div>
                     </form>
                 </div>
