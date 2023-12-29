@@ -6,16 +6,17 @@ import getDictionary from '@/app/dictionaries';
 import TextRolling from './ui/text-rolling';
 import { Player } from '@lottiefiles/react-lottie-player';
 import React from 'react';
+import Link from 'next/link';
 
 export default function Hero() {
   const dict = getDictionary();
-  const playerRef =  React.createRef<Player>()
+  const playerRef = React.createRef<Player>()
 
   const handleAnimationLoaded = () => {
     playerRef.current?.play();
   };
 
-  
+
 
   return (
     <section>
@@ -43,7 +44,9 @@ export default function Hero() {
                 </div>
               </div>
               <div className="flex gap-8 justify-center items-center flex-col md:justify-start md:flex-row">
-                <Button goTo='https://calendly.com/jorgeramirez-software/entendiendo-tus-necesidades'>{dict.header.ctaButton}</Button>
+                <Link href={'https://calendly.com/jorgeramirez-software/entendiendo-tus-necesidades'} target="_blank">
+                  <Button>{dict.header.ctaButton}</Button>
+                </Link>
                 <div className="inline-flex gap-2 md:gap-4 h-8">
                   <Image
                     src="/images/instagram_icon.svg"
@@ -77,9 +80,9 @@ export default function Hero() {
                 ref={playerRef}
                 // esta linea se encarga de darle play a la animacion cuando se carga
                 onEvent={event => {
-                  if (event === 'instanceSaved'){
+                  if (event === 'instanceSaved') {
                     handleAnimationLoaded();
-                  } 
+                  }
                 }}
                 keepLastFrame={true}
                 src="/animations/computer_phone.json"
