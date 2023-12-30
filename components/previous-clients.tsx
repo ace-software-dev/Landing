@@ -27,7 +27,7 @@ export default function PreviousClients() {
           <Title classes='w-[70%] md:w-full'>Empresas que confían en nosotros</Title>
           <div className="flex pt-11" data-aos="fade-up">
             <Swiper
-              spaceBetween={10}
+              spaceBetween={60}
               loop={true}
               centeredSlides={true}
               autoplay={{
