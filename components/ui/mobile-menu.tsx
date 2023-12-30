@@ -2,12 +2,21 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
+import getDictionary from '@/app/dictionaries'
+import i18nConfig from '@/i18nConfig'
+import { useCurrentLocale } from 'next-i18n-router/client'
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
 
   const trigger = useRef<HTMLButtonElement>(null)
   const mobileNav = useRef<HTMLDivElement>(null)
+  const dict = getDictionary();
+  const locale = useCurrentLocale(i18nConfig);
+
+  const setLocaleCookie = (locale: 'en' | 'es') => {
+    document.cookie = `NEXT_LOCALE=${locale}; path=/`;
+  }
 
   // close the mobile menu on click outside
   useEffect(() => {
@@ -59,21 +68,49 @@ export default function MobileMenu() {
         className="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out"
         style={mobileNavOpen ? { maxHeight: mobileNav.current?.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: 0.8 }}
       >
-        <ul className="bg-gray-800 px-4 py-2">
+        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-white"></div>
+        <ul className="bg-slate-900 px-4 py-3 font-medium rounded bg-opacity-95">
           <li>
-            <Link href="/signin" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
-              Sign in
+            <Link href="/">
+              <div className="flex py-2 justify-center w-full hover:underline text-2xl">{dict.topbar.home}</div>
             </Link>
           </li>
           <li>
-            <Link
-              href="/signup"
-              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out" onClick={() => setMobileNavOpen(false)}
-            >
-              Sign up
+            <Link href="/">
+              <div className="flex py-2 justify-center w-full hover:underline text-2xl">{dict.topbar.us}</div>
             </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <div className="flex py-2 justify-center w-full hover:underline text-2xl">{dict.topbar.services}</div>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <div className="flex py-2 justify-center w-full hover:underline text-2xl">{dict.topbar.clients}</div>
+            </Link>
+          </li>
+          <li className="flex justify-center">
+            <div className="flex py-2 justify-between w-24 text-2xl">
+              <Link
+                href="/en"
+                className={`${locale == 'en'? 'font-bold' : ''} hover:underline`}
+                onClick={() => setLocaleCookie('en')}
+              >
+                {dict.global.en}
+              </Link>
+              <div>/</div>
+              <Link
+                href="/"
+                className={`${locale == 'es'? 'font-bold' : ''} hover:underline`}
+                onClick={() => setLocaleCookie('es')}
+              >
+                {dict.global.es}
+              </Link>
+            </div>
           </li>
         </ul>
+        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-white opacity-25"></div>
       </nav>
     </div>
   )
