@@ -6,7 +6,7 @@ interface TitleProps {
 
 export default function Title({children, classes, size}: TitleProps) {
   if (size === undefined){
-    size = "text-5xl"
+    size = "text-3xl md:text-5xl"
   }
   return (
     <div className='flex flex-col justify-center items-center'>

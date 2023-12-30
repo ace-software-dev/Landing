@@ -11,7 +11,7 @@ export default function Nosotros() {
         <div className="text-center">
           <SectionTitle subtitle={"Nuestro valor agregado"} title={"¿Por qué nosotros?"}></SectionTitle>
           <div className=" flex justify-center">
-            <p className="text-center text-2xl md:w-[70%]">Tendrás paz mental mientras nosotros trabajamos, manteniéndote en control con actualizaciones constantes y total transparencia</p>
+            <p className="text-center text-[1.34rem] lg:text-2xl md:w-[70%]">Tendrás paz mental mientras nosotros trabajamos, manteniéndote en control con actualizaciones constantes y total transparencia</p>
           </div>
         </div>
 
@@ -29,7 +29,7 @@ export default function Nosotros() {
 
             <div className=" flex flex-col gap-12 justify-center">
               <div className="flex items-start flex-col" data-aos="fade-right">
-                <Title classes="text-start" size="text-4xl">Experiencia de Usuario</Title>
+                <Title classes="text-start" size="text-[1.84rem] lg:text-4xl">Experiencia de Usuario</Title>
                 <p className="text-xl">
                   Diseñamos con el usuario en mente, asegurando que tu software sea intuitivo y agradable
                 </p>
@@ -37,7 +37,7 @@ export default function Nosotros() {
 
 
               <div className="flex items-start flex-col" data-aos="fade-right">
-                <Title classes="text-start" size="text-4xl">Calidad</Title>
+                <Title classes="text-start" size="text-[1.84rem] lg:text-4xl">Calidad</Title>
                 <p className="text-xl">
                   Compromiso con los más altos estándares de calidad, ofrecemos excelencia
                 </p>
@@ -56,7 +56,7 @@ export default function Nosotros() {
 
             <div className="flex flex-col gap-12">
               <div className="flex items-start flex-col" data-aos="fade-right">
-                <Title classes="text-start" size="text-4xl">Soluciones personalizadas</Title>
+                <Title classes="text-start" size="text-[1.84rem] lg:text-4xl">Soluciones personalizadas</Title>
                 <p className="text-xl">
                   Software a la medida que se adapta a las necesidades específicas de tu negocio.
                 </p>
@@ -64,7 +64,7 @@ export default function Nosotros() {
 
 
               <div className="flex items-start flex-col" data-aos="fade-right">
-                <Title classes="text-start" size="text-4xl">Desarrollo incremental</Title>
+                <Title classes="text-start" size="text-[1.84rem] lg:text-4xl">Desarrollo incremental</Title>
                 <p className="text-xl">
                   Entregas continuas que te permiten aprovechar rápidamente las ventajas de tu nuevo software
                 </p>

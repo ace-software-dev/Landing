@@ -24,7 +24,7 @@ export default function PreviousClients() {
     <section>
       <div className="max-w-3xl md:max-w-3xl lg:max-w-6xl mx-auto">
         <div className='py-12 md:py-20'>
-          <Title classes='w-[70%] md:w-full'>Empresas que confían en nosotros</Title>
+          <Title classes='w-11/12 md:w-full'>Empresas que confían en nosotros</Title>
           <div className="flex pt-11" data-aos="fade-up">
             <Swiper
               spaceBetween={60}

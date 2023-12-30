@@ -13,7 +13,7 @@ import Contactanos from '@/components/contactanos';
 export default function Home() {
 
   return (
-    <div className='mx-auto px-4 md:px-16 xl:px-0' id='body'>
+    <div className='mx-auto px-11 md:px-16 xl:px-0' id='body'>
       <Nosotros />
       <Servicios />
       <PreviousClients />
