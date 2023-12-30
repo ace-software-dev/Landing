@@ -66,7 +66,7 @@ export default function RootLayout({
           <div className="grow mt-[70px]" >
             <Hero />
           </div>
-          <main className="flex justify-center">
+          <main>
 
             {children}
 
