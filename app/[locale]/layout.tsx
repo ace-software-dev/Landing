@@ -59,14 +59,14 @@ export default function RootLayout({
   });
 
   return (
-    <html lang={locale} className="text-xs md:text-sm lg:text-base ">
+    <html lang={locale} className="text-[12px] md:text-sm lg:text-base">
       <body className={`${filson_pro.variable} font-filson-pro antialiased bg-blue-10 text-gray-200 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
           <div className="grow mt-[70px]" >
             <Hero />
           </div>
-          <main className="flex justify-center">
+          <main>
 
             {children}
 
