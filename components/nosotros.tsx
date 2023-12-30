@@ -6,8 +6,8 @@ import { Player } from "@lottiefiles/react-lottie-player"
 
 export default function Nosotros() {
     return (
-    <section>
-        <div className="flex flex-col max-w-6xl px-16 xl:px-0 py-14 gap-11 w-[100vw]">
+    <section className="flex justify-center">
+        <div className="flex flex-col max-w-6xl px-16 xl:px-0 py-12 md:py-20 gap-11 w-[100vw]">
             <div className="text-center">
                 <SectionTitle subtitle={"Nuestro valor agregado"} title={"¿Por qué nosotros?"}></SectionTitle>
                 <div className=" flex justify-center">
