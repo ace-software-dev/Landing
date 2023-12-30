@@ -3,12 +3,12 @@ export const metadata = {
   description: 'Desarrollo de Software / Software Development',
 }
 
-import Newsletter from '@/components/newsletter';
-import Zigzag from '@/components/zigzag';
 import WhatsappButton from '@/components/whatsapp-button';
 import Servicios from '@/components/servicios';
 import PreviousClients from '@/components/previous-clients';
 import Nosotros from '@/components/nosotros';
+import Contactanos from '@/components/contactanos';
+
 
 export default function Home() {
 
@@ -17,6 +17,7 @@ export default function Home() {
       <Nosotros />
       <Servicios />
       <PreviousClients />
+      <Contactanos />
       <WhatsappButton phoneNumber='+524423792074' message='Hola ACE! Estoy interesado en sus servicios de desarrollo de Software.'/>
     </div>
   );
