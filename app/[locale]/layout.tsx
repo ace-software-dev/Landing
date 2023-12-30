@@ -59,7 +59,7 @@ export default function RootLayout({
   });
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className="text-xs md:text-sm lg:text-base ">
       <body className={`${filson_pro.variable} font-filson-pro antialiased bg-blue-10 text-gray-200 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />

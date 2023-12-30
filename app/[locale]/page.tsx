@@ -15,10 +15,8 @@ export default function Home() {
   return (
     <div className='mx-auto' id='body'>
       <Nosotros />
-      <Zigzag />
       <Servicios />
       <PreviousClients />
-      <Newsletter />
       <WhatsappButton phoneNumber='+524423792074' message='Hola ACE! Estoy interesado en sus servicios de desarrollo de Software.'/>
     </div>
   );

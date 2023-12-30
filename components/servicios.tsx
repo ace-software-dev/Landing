@@ -12,7 +12,7 @@ export default function Servicios() {
 
           <SectionTitle subtitle='Servicios' title='¿Qué hacemos?' />
 
-          <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none pt-11">
+          <div className="max-w-lg mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none pt-11">
 
             <div className="flex flex-col h-full p-6 grow shrink basis-0 self-stretch bg-white bg-opacity-7 rounded-2xl border-2 border-blue-600 justify-start items-center gap-6" data-aos="fade-up">
               <div>
