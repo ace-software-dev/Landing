@@ -76,5 +76,9 @@
     "whatsappPlaceholder": "55 1234 5678",
     "message": "Tell us a bit more about your idea",
     "messagePlaceholder": "I want a web app for..."
+  },
+  "footer": {
+    "title": "All rights reserved.",
+    "privacy": "Privacy Policy"
   }
 }

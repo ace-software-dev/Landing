@@ -76,5 +76,9 @@
     "whatsappPlaceholder": "55 1234 5678",
     "message": "Cuéntanos un poco más de tu idea",
     "messagePlaceholder": "Quiero una pagina para..."
+  },
+  "footer": {
+    "title": "Todos los derechos reservados.",
+    "privacy": "Política de Privacidad"
   }
 }
