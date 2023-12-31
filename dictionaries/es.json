@@ -23,5 +23,26 @@
     ],
     "slogan": "Amamos verte crecer",
     "ctaButton": "Cotiza ahora"
+  },
+  "nosotros":{
+    "title": "¿Por qué elegirnos?",
+    "subtitle": "Nuestro valor agregado", 
+    "description": "Tendrás paz mental mientras nosotros trabajamos, manteniéndote en control con actualizaciones constantes y total transparencia.",
+    "ux": {
+      "title": "Experiencia de usuario",
+      "description": "Diseñamos con el usuario en mente, asegurando que tu software sea intuitivo y agradable"
+    },
+    "quality": {
+      "title": "Calidad",
+      "description": " Compromiso con los más altos estándares de calidad, ofrecemos excelencia"
+    },
+    "tailored": {
+      "title": "Soluciones personalizadas",
+      "description": "Cada proyecto es único, por lo que nos adaptamos a tus necesidades"
+    },
+    "agile": {
+      "title": "Desarrollo incremental",
+      "description": "Entregas continuas que te permiten aprovechar rápidamente las ventajas de tu nuevo software"
+    }
   }
 }

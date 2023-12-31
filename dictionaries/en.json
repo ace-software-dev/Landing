@@ -23,5 +23,27 @@
     ],
     "slogan": "We love to see you grow",
     "ctaButton": "Quote now"
+  },
+  "nosotros": {
+    "title": "Why Choose Us?",
+    "subtitle": "Our Added Value",
+    "description": "You will have peace of mind while we work, keeping you in control with constant updates and total transparency.",
+    "ux": {
+      "title": "User Experience",
+      "description": "We design with the user in mind, ensuring that your software is intuitive and enjoyable."
+    },
+    "quality": {
+      "title": "Quality",
+      "description": "Commitment to the highest quality standards; we deliver excellence."
+    },
+    "tailored": {
+      "title": "Customized Solutions",
+      "description": "Every project is unique, so we tailor our solutions to meet your needs."
+    },
+    "agile": {
+      "title": "Incremental Development",
+      "description": "Continuous deliveries that allow you to quickly leverage the benefits of your new software."
+    }
   }
+  
 }
