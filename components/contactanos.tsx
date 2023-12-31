@@ -24,7 +24,7 @@ export default function Contactanos() {
                             <div className="flex-col justify-start items-center gap-8 flex">
                                 <div className="self-stretch flex-col justify-start items-start gap-2 flex">
                                     <label className="text-slate-50 text-base font-medium">{dict.contactform.name}*</label>
-                                    <input type="text" id="nombre" name="nombre" placeholder={dict.contactform.namePlaceholder} required className="self-stretch px-4 py-4 bg-slate-700 rounded-xl gap-2.5 text-slate-50 text-xl focus:ring-2 focus:ring-inset focus:ring-indigo-600" />
+                                    <input type="text" id="nombre" name="nombre" placeholder={dict.contactform.namePlacehoder} required className="self-stretch px-4 py-4 bg-slate-700 rounded-xl gap-2.5 text-slate-50 text-xl focus:ring-2 focus:ring-inset focus:ring-indigo-600" />
                                 </div>
                                 <div className="self-stretch flex-col justify-start items-start gap-2 flex">
                                     <label className="text-slate-50 text-base font-medium">{dict.contactform.email}*</label>
