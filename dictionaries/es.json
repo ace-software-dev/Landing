@@ -44,5 +44,37 @@
       "title": "Desarrollo incremental",
       "description": "Entregas continuas que te permiten aprovechar rápidamente las ventajas de tu nuevo software"
     }
+  },
+  "servicios": {
+    "title": "¿Qué hacemos?",
+    "subtitle": "Servicios",
+    "web": {
+      "title": "Aplicaciones Web",
+      "description": "Creadas para adaptarse a los flujos de trabajo de tu empresa e integrar sin esfuerzo tus operaciones existentes."
+    },
+    "landing": {
+      "title": "Landing Page",
+      "description": "Diseñamos y desarrollamos la página que hará crecer tu negocio y le dará confianza a tus clientes desde un inicio."
+    },
+    "mobile": {
+      "title": "Aplicaciones Móviles",
+      "description": "Sabemos que tener todo en la palma de la mano es esencial. Colaboración y comunicación donde quiera que estés."
+    }
+  },
+  "previousclients": {
+    "title": "Empresas que confían en nosotros"
+  },
+  "contactform": {
+    "title": "¿Listo para llevar tu negocio",
+    "title2": "al siguiente nivel?",
+    "subtitle": "Escríbenos para cotizar tu proyecto",
+    "name": "Nombre completo",
+    "namePlacehoder": "Gabriel García Márquez",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "gabrielGM@gmail.com",
+    "whatsapp": "WhatsApp",
+    "whatsappPlaceholder": "55 1234 5678",
+    "message": "Cuéntanos un poco más de tu idea",
+    "messagePlaceholder": "Quiero una pagina para..."
   }
 }

@@ -44,6 +44,37 @@
       "title": "Incremental Development",
       "description": "Continuous deliveries that allow you to quickly leverage the benefits of your new software."
     }
+  },
+  "servicios": {
+    "title": "What We Do?",
+    "subtitle": "Services",
+    "web": {
+      "title": "Web Applications",
+      "description": "Crafted to adapt to your company's workflows and seamlessly integrate with your existing operations."
+    },
+    "landing": {
+      "title": "Landing Page",
+      "description": "We design and develop the page that will grow your business and instill confidence in your customers from the outset."
+    },
+    "mobile": {
+      "title": "Mobile Applications",
+      "description": "We understand having everything at your fingertips is essential. Collaboration and communication wherever you are."
+    }
+  },
+  "previousclients": {
+    "title": "Companies that Trust Us"
+  },
+  "contactform": {
+    "title": "Ready to take your business",
+    "title2": "to the next level?",
+    "subtitle": "Write to us to get a quote for your project",
+    "name": "Full Name",
+    "namePlacehoder": "Alexander Sterling",
+    "email": "Email",
+    "emailPlaceholder": "alex.sterling@example.com",
+    "whatsapp": "WhatsApp",
+    "whatsappPlaceholder": "55 1234 5678",
+    "message": "Tell us a bit more about your idea",
+    "messagePlaceholder": "I want a web app for..."
   }
-  
 }
