@@ -60,7 +60,7 @@ export default function Contactanos() {
 
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 flex flex-col gap-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20 flex flex-col gap-20">
         <div className="">
           <div className='flex-col justify-start items-center gap-4 flex text-center'>
             <Title>¿Listo para llevar tu negocio <br /> al siguiente nivel? </Title>
