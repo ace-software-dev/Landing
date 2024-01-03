@@ -18,7 +18,7 @@ export default function Home() {
       <Servicios />
       <PreviousClients />
       <Contactanos />
-      <WhatsappButton phoneNumber='+524423792074' message='Hola ACE! Estoy interesado en sus servicios de desarrollo de Software.'/>
+      <WhatsappButton phoneNumber='+524423792074'/>
     </div>
   );
 }
