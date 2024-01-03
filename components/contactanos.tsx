@@ -3,7 +3,7 @@
 import Button from './ui/button';
 import Title from './ui/title';
 import HCaptcha from '@hcaptcha/react-hcaptcha';
-import React, { useRef, useState } from 'react';;
+import React, { useState } from 'react';;
 
 export default function Contactanos() {
   const [formData, setFormData] = useState({
@@ -14,6 +14,7 @@ export default function Contactanos() {
   });
 
   const [submissionStatus, setSubmissionStatus] = useState('');
+  const [token, setToken] = useState(null);
 
   const captchaRef = React.useRef<HCaptcha>(null);
 
@@ -21,8 +22,7 @@ export default function Contactanos() {
     try{
       event.preventDefault();
       const formData = new FormData(event.target);
-      const hcaptchaToken = formData.get("h-captcha-response");
-      if(hcaptchaToken){
+      if(token){
         formData.append("access_key", process.env.NEXT_PUBLIC_H_CAPTCHA as string);
         formData.delete('g-recaptcha-response');
 
@@ -54,6 +54,10 @@ export default function Contactanos() {
     }
   }
 
+  const onExpire = () => {
+    setToken(null);
+  }
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 flex flex-col gap-20">
@@ -64,45 +68,48 @@ export default function Contactanos() {
           </div>
         </div>
         <div className="flex flex-col gap-10">
-          <div className="items-center gap-16 flex">
+          <div className="items-center gap-16 flex sm:px-8 md:px-20">
             <img className=" hidden md:block object-cover w-1/4" src='\images\CoolRocket.svg' alt='Rocket' loading="lazy"/>
             <form onSubmit={handleSubmit} className="w-full md:w-3/4">
               <input type="hidden" name="from_name" value="Landing: Nuevo Cliente"/>
               <input type="hidden" name="subject" value="Alguien quiere cotactarse a través de ACE Landing." />
-              <div className="flex-col justify-start items-center gap-8 flex">
+              <div className="flex-col justify-start items-center gap-4 flex">
                 <div className="self-stretch flex-col justify-start items-start gap-2 flex">
                   <label className="text-slate-50 text-base font-medium">Nombre completo *</label>
-                  <input type="text" id="nombre" name="nombre" placeholder="Nombre" value={formData.nombre} onChange={(e) => setFormData({ ...formData, nombre: e.target.value })} required className="self-stretch px-4 py-4 bg-slate-700 rounded-xl gap-2.5 text-slate-50 text-xl focus:ring-2 focus:ring-inset focus:ring-indigo-600"/>
+                  <input type="text" id="nombre" name="nombre" placeholder="Nombre" value={formData.nombre} onChange={(e) => setFormData({ ...formData, nombre: e.target.value })} required className="self-stretch px-4 py-2 bg-slate-700 rounded-xl gap-2.5 text-slate-50 focus:ring-2 focus:ring-inset focus:ring-indigo-600"/>
                 </div>
                 <div className="self-stretch flex-col justify-start items-start gap-2 flex">
                   <label className="text-slate-50 text-base font-medium">Correo *</label>
-                  <input type="email" id="correo" name="correo" placeholder="acesoftwaremx@gmail.com" value={formData.correo} onChange={(e) => setFormData({ ...formData, correo: e.target.value })} required className="self-stretch px-4 py-4 bg-slate-700 rounded-xl gap-2.5 text-slate-50 text-xl focus:ring-2 focus:ring-inset focus:ring-indigo-600"/>
+                  <input type="email" id="correo" name="correo" placeholder="acesoftwaremx@gmail.com" value={formData.correo} onChange={(e) => setFormData({ ...formData, correo: e.target.value })} required className="self-stretch px-4 py-2 bg-slate-700 rounded-xl gap-2.5 text-slate-50 focus:ring-2 focus:ring-inset focus:ring-indigo-600"/>
                 </div>
                 <div className="self-stretch flex-col justify-start items-start gap-2 flex">
                   <label className="text-slate-50 text-base font-medium">WhatsApp</label>
                   <div className="flex w-full">
                     <div className="relative inline-block">
-                      <select id="country-code" name="country-code" className="form-select px-4 py-4 bg-slate-700 rounded-l-xl text-slate-50 text-xl focus:ring-2 focus:ring-inset focus:ring-indigo-600 w-24">
-                        <option value="52" defaultValue={1}>+52</option>
+                      <select id="country-code" name="country-code" className="form-select text-center py-2 bg-slate-700 rounded-l-xl text-slate-50 focus:ring-2 focus:ring-inset focus:ring-indigo-600 w-24">
                         <option value="1">+1</option>
+                        <option value="52" defaultValue={1}>+52</option>
+                        <option value="593">+593</option>
                       </select>
                     </div>
-                    <input type="number" id="numero" name="numero" placeholder="123 456 7890" value={formData.numero} onChange={(e) => setFormData({ ...formData, numero: e.target.value })} className="w-full self-stretch px-4 py-4 bg-slate-700 rounded-r-xl gap-2.5 text-slate-50 text-xl focus:ring-2 focus:ring-inset focus:ring-indigo-600"/>
+                    <input type="number" id="numero" name="numero" placeholder="123 456 7890" value={formData.numero} onChange={(e) => setFormData({ ...formData, numero: e.target.value })} className="w-full self-stretch px-4 py-2 bg-slate-700 rounded-r-xl gap-2.5 text-slate-50 focus:ring-2 focus:ring-inset focus:ring-indigo-600"/>
                   </div>
                 </div>
 
                 <div className="self-stretch flex-col justify-start items-start gap-2 flex">
                   <label className="text-slate-50 text-base font-medium">Cuéntanos un poco más de tu idea</label>
-                  <textarea id="comentarios" name="comentarios" placeholder="Escribe aquí..." value={formData.comentarios} onChange={(e) => setFormData({ ...formData, comentarios: e.target.value })} className="self-stretch h-40 px-4 py-4 bg-slate-700 rounded-xl justify-top items-start gap-2.5 inline-flex text-slate-50 text-xl focus:ring-2 focus:ring-inset focus:ring-indigo-600"/>
+                  <textarea id="comentarios" name="comentarios" placeholder="Escribe aquí..." value={formData.comentarios} onChange={(e) => setFormData({ ...formData, comentarios: e.target.value })} className="self-stretch h-28 px-4 py-2 bg-slate-700 rounded-xl justify-top items-start gap-2.5 inline-flex text-slate-50 focus:ring-2 focus:ring-inset focus:ring-indigo-600"/>
                 </div>
 
                 <HCaptcha
                   sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
                   theme="dark"
+                  onVerify={setToken}
+                  onExpire={onExpire}
                   ref={captchaRef}
                 /> 
                 <span className='flex justify-center'>
-                  <Button type='submit' classes='px-8 py-4 text-slate-50 text-lg font-bold'>Contáctanos</Button>
+                  <Button type='submit' classes='text-slate-50 text-lg font-bold' disabled={!token}>Contáctanos</Button>
                 </span>
 
                 {submissionStatus && <label className="text-purple-300 text-base font-medium"> {submissionStatus} </label>}
