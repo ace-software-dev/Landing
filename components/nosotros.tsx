@@ -16,7 +16,7 @@ export default function Nosotros() {
         <div className="text-center">
           <SectionTitle subtitle={dict.nosotros.subtitle} title={dict.nosotros.title}></SectionTitle>
           <div className=" flex justify-center">
-            <p className="text-center text-[1.34rem] lg:text-2xl md:w-[70%]">{dict.nosotros.des}</p>
+            <p className="text-center text-[1.34rem] lg:text-2xl md:w-[70%]">{dict.nosotros.description}</p>
           </div>
         </div>
 

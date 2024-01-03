@@ -30,19 +30,19 @@
     "description": "Tendrás paz mental mientras nosotros trabajamos, manteniéndote en control con actualizaciones constantes y total transparencia.",
     "ux": {
       "title": "Experiencia de usuario",
-      "description": "Diseñamos con el usuario en mente, asegurando que tu software sea intuitivo y agradable"
+      "description": "Diseñamos con el usuario en mente, asegurando que tu software sea intuitivo y agradable."
     },
     "quality": {
       "title": "Calidad",
-      "description": " Compromiso con los más altos estándares de calidad, ofrecemos excelencia"
+      "description": " Compromiso con los más altos estándares de calidad; ofrecemos excelencia."
     },
     "tailored": {
       "title": "Soluciones personalizadas",
-      "description": "Cada proyecto es único, por lo que nos adaptamos a tus necesidades"
+      "description": "Cada proyecto es único por lo que nos adaptamos a tus necesidades."
     },
     "agile": {
       "title": "Desarrollo incremental",
-      "description": "Entregas continuas que te permiten aprovechar rápidamente las ventajas de tu nuevo software"
+      "description": "Entregas continuas que te permiten aprovechar rápidamente las ventajas de tu nuevo software."
     }
   },
   "servicios": {
@@ -50,7 +50,7 @@
     "subtitle": "Servicios",
     "web": {
       "title": "Aplicaciones Web",
-      "description": "Creadas para adaptarse a los flujos de trabajo de tu empresa e integrar sin esfuerzo tus operaciones existentes."
+      "description": "Creadas para adaptarse al flujo de trabajo de tu empresa e integrar sin esfuerzo tus operaciones existentes."
     },
     "landing": {
       "title": "Landing Page",
@@ -58,7 +58,7 @@
     },
     "mobile": {
       "title": "Aplicaciones Móviles",
-      "description": "Sabemos que tener todo en la palma de la mano es esencial. Colaboración y comunicación donde quiera que estés."
+      "description": "Sabemos que tener todo en la palma de tu mano es esencial. Colaboración y comunicación donde quiera que estés."
     }
   },
   "previousclients": {
@@ -69,13 +69,13 @@
     "title2": "al siguiente nivel?",
     "subtitle": "Escríbenos para cotizar tu proyecto",
     "name": "Nombre completo",
-    "namePlacehoder": "Gabriel García Márquez",
+    "namePlacehoder": "Gabriel García",
     "email": "Correo electrónico",
-    "emailPlaceholder": "gabrielGM@gmail.com",
+    "emailPlaceholder": "gabriel@gmail.com",
     "whatsapp": "WhatsApp",
     "whatsappPlaceholder": "55 1234 5678",
     "message": "Cuéntanos un poco más de tu idea",
-    "messagePlaceholder": "Quiero una pagina para..."
+    "messagePlaceholder": "Quiero una página web para..."
   },
   "footer": {
     "title": "Todos los derechos reservados.",
