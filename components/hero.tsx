@@ -48,26 +48,30 @@ export default function Hero() {
                   <Button>{dict.header.ctaButton}</Button>
                 </Link>
                 <div className="inline-flex gap-2 md:gap-4 h-8">
-                  <Image
-                    src="/images/instagram_icon.svg"
-                    alt='Instagram Logo Icon'
-                    width={32}
-                    height={32}
-                    className='hover:cursor-pointer hover:opacity-90'
-                  />
-                  <Image
-                    src="/images/linkedin_icon.svg"
-                    alt='Instagram Logo Icon'
-                    width={32}
-                    height={32}
-                    className='hover:cursor-pointer hover:opacity-90'
-                  />
+                  <Link href={"https://www.instagram.com/ace.software.mx?igsh=OHlweHJ4dWZwNHl3"} target="_blank">
+                    <Image
+                      src="/images/instagram_icon.svg"
+                      alt='Instagram Logo Icon'
+                      width={32}
+                      height={32}
+                      className='hover:cursor-pointer hover:opacity-90'
+                    />
+                  </Link>
+                  <Link href={"https://www.linkedin.com/company/ace-software-mx/"} target="_blank">
+                    <Image
+                      src="/images/linkedin_icon.svg"
+                      alt='Instagram Logo Icon'
+                      width={32}
+                      height={32}
+                      className='hover:cursor-pointer hover:opacity-90'
+                    />
+                  </Link>
                   <Image
                     src="/images/facebook_icon.svg"
                     alt='Instagram Logo Icon'
                     width={32}
                     height={32}
-                    className='hover:cursor-pointer hover:opacity-90'
+                    className='hidden hover:cursor-pointer hover:opacity-90'
                   />
                 </div>
               </div>
