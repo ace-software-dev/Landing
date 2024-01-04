@@ -1,4 +1,5 @@
 'use client'
+import getDictionary from '@/app/dictionaries'
 
 import Button from './ui/button';
 import Title from './ui/title';
@@ -6,6 +7,7 @@ import HCaptcha from '@hcaptcha/react-hcaptcha';
 import React, { useState } from 'react';;
 
 export default function Contactanos() {
+    const dict = getDictionary();
   const [formData, setFormData] = useState({
     nombre: '',
     correo: '',
@@ -63,8 +65,8 @@ export default function Contactanos() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20 flex flex-col gap-20">
         <div className="">
           <div className='flex-col justify-start items-center gap-4 flex text-center'>
-            <Title>¿Listo para llevar tu negocio <br /> al siguiente nivel? </Title>
-            <div className="text-[1.34rem] lg:text-3xl">Escríbenos para cotizar tu proyecto</div>
+            <Title>{dict.contactform.title} <br/> {dict.contactform.title2} </Title>
+            <div className="text-[1.34rem] lg:text-3xl">{dict.contactform.subtitle}</div>
           </div>
         </div>
         <div className="flex flex-col gap-10">
@@ -75,15 +77,15 @@ export default function Contactanos() {
               <input type="hidden" name="subject" value="Alguien quiere cotactarse a través de ACE Landing." />
               <div className="flex-col justify-start items-center gap-4 flex">
                 <div className="self-stretch flex-col justify-start items-start gap-2 flex">
-                  <label className="text-slate-50 text-base font-medium">Nombre completo *</label>
-                  <input type="text" id="nombre" name="nombre" placeholder="Nombre" value={formData.nombre} onChange={(e) => setFormData({ ...formData, nombre: e.target.value })} required className="self-stretch px-4 py-2 bg-slate-700 rounded-xl gap-2.5 text-slate-50 focus:ring-2 focus:ring-inset focus:ring-indigo-600"/>
+                  <label className="text-slate-50 text-base font-medium">{dict.contactform.name} *</label>
+                  <input type="text" id="nombre" name="nombre" placeholder={dict.contactform.namePlacehoder} value={formData.nombre} onChange={(e) => setFormData({ ...formData, nombre: e.target.value })} required className="self-stretch px-4 py-2 bg-slate-700 rounded-xl gap-2.5 text-slate-50 focus:ring-2 focus:ring-inset focus:ring-indigo-600"/>
                 </div>
                 <div className="self-stretch flex-col justify-start items-start gap-2 flex">
-                  <label className="text-slate-50 text-base font-medium">Correo *</label>
-                  <input type="email" id="correo" name="correo" placeholder="acesoftwaremx@gmail.com" value={formData.correo} onChange={(e) => setFormData({ ...formData, correo: e.target.value })} required className="self-stretch px-4 py-2 bg-slate-700 rounded-xl gap-2.5 text-slate-50 focus:ring-2 focus:ring-inset focus:ring-indigo-600"/>
+                  <label className="text-slate-50 text-base font-medium">{dict.contactform.email} *</label>
+                  <input type="email" id="correo" name="correo" placeholder={dict.contactform.emailPlaceholder} value={formData.correo} onChange={(e) => setFormData({ ...formData, correo: e.target.value })} required className="self-stretch px-4 py-2 bg-slate-700 rounded-xl gap-2.5 text-slate-50 focus:ring-2 focus:ring-inset focus:ring-indigo-600"/>
                 </div>
                 <div className="self-stretch flex-col justify-start items-start gap-2 flex">
-                  <label className="text-slate-50 text-base font-medium">WhatsApp</label>
+                  <label className="text-slate-50 text-base font-medium">{dict.contactform.whatsapp}</label>
                   <div className="flex w-full">
                     <div className="relative inline-block">
                       <select id="country-code" name="country-code" className="form-select text-center py-2 bg-slate-700 rounded-l-xl text-slate-50 focus:ring-2 focus:ring-inset focus:ring-indigo-600 w-24">
@@ -92,13 +94,13 @@ export default function Contactanos() {
                         <option value="593">+593</option>
                       </select>
                     </div>
-                    <input type="number" id="numero" name="numero" placeholder="123 456 7890" value={formData.numero} onChange={(e) => setFormData({ ...formData, numero: e.target.value })} className="w-full self-stretch px-4 py-2 bg-slate-700 rounded-r-xl gap-2.5 text-slate-50 focus:ring-2 focus:ring-inset focus:ring-indigo-600"/>
+                    <input type="number" id="numero" name="numero" placeholder={dict.contactform.whatsappPlaceholder} value={formData.numero} onChange={(e) => setFormData({ ...formData, numero: e.target.value })} className="w-full self-stretch px-4 py-2 bg-slate-700 rounded-r-xl gap-2.5 text-slate-50 focus:ring-2 focus:ring-inset focus:ring-indigo-600"/>
                   </div>
                 </div>
 
                 <div className="self-stretch flex-col justify-start items-start gap-2 flex">
-                  <label className="text-slate-50 text-base font-medium">Cuéntanos un poco más de tu idea</label>
-                  <textarea id="comentarios" name="comentarios" placeholder="Escribe aquí..." value={formData.comentarios} onChange={(e) => setFormData({ ...formData, comentarios: e.target.value })} className="self-stretch h-28 px-4 py-2 bg-slate-700 rounded-xl justify-top items-start gap-2.5 inline-flex text-slate-50 focus:ring-2 focus:ring-inset focus:ring-indigo-600"/>
+                  <label className="text-slate-50 text-base font-medium">{dict.contactform.message}</label>
+                  <textarea id="comentarios" name="comentarios" placeholder={dict.contactform.messagePlaceholder} value={formData.comentarios} onChange={(e) => setFormData({ ...formData, comentarios: e.target.value })} className="self-stretch h-28 px-4 py-2 bg-slate-700 rounded-xl justify-top items-start gap-2.5 inline-flex text-slate-50 focus:ring-2 focus:ring-inset focus:ring-indigo-600"/>
                 </div>
 
                 <HCaptcha
@@ -109,7 +111,7 @@ export default function Contactanos() {
                   ref={captchaRef}
                 /> 
                 <span className='flex justify-center'>
-                  <Button type='submit' classes='text-slate-50 text-lg font-bold' disabled={!token}>Contáctanos</Button>
+                  <Button type='submit' classes='text-slate-50 text-lg font-bold' disabled={!token}>{dict.global.ctaButton}</Button>
                 </span>
 
                 {submissionStatus && <label className="text-purple-300 text-base font-medium"> {submissionStatus} </label>}

@@ -23,5 +23,63 @@
     ],
     "slogan": "Amamos verte crecer",
     "ctaButton": "Cotiza ahora"
-  }
+  },
+  "nosotros":{
+    "title": "¿Por qué elegirnos?",
+    "subtitle": "Nuestro valor agregado", 
+    "description": "Tendrás paz mental mientras nosotros trabajamos, manteniéndote en control con actualizaciones constantes y total transparencia.",
+    "ux": {
+      "title": "Experiencia de usuario",
+      "description": "Diseñamos con el usuario en mente, asegurando que tu software sea intuitivo y agradable."
+    },
+    "quality": {
+      "title": "Calidad",
+      "description": " Compromiso con los más altos estándares de calidad; ofrecemos excelencia."
+    },
+    "tailored": {
+      "title": "Soluciones personalizadas",
+      "description": "Cada proyecto es único por lo que nos adaptamos a tus necesidades."
+    },
+    "agile": {
+      "title": "Desarrollo incremental",
+      "description": "Entregas continuas que te permiten aprovechar rápidamente las ventajas de tu nuevo software."
+    }
+  },
+  "servicios": {
+    "title": "¿Qué hacemos?",
+    "subtitle": "Servicios",
+    "web": {
+      "title": "Aplicaciones Web",
+      "description": "Creadas para adaptarse al flujo de trabajo de tu empresa e integrar sin esfuerzo tus operaciones existentes."
+    },
+    "landing": {
+      "title": "Landing Page",
+      "description": "Diseñamos y desarrollamos la página que hará crecer tu negocio y le dará confianza a tus clientes desde un inicio."
+    },
+    "mobile": {
+      "title": "Aplicaciones Móviles",
+      "description": "Sabemos que tener todo en la palma de tu mano es esencial. Colaboración y comunicación donde quiera que estés."
+    }
+  },
+  "previousclients": {
+    "title": "Empresas que confían en nosotros"
+  },
+  "contactform": {
+    "title": "¿Listo para llevar tu negocio",
+    "title2": "al siguiente nivel?",
+    "subtitle": "Escríbenos para cotizar tu proyecto",
+    "name": "Nombre completo",
+    "namePlacehoder": "Gabriel García",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "gabriel@gmail.com",
+    "whatsapp": "WhatsApp",
+    "whatsappPlaceholder": "55 1234 5678",
+    "message": "Cuéntanos un poco más de tu idea",
+    "messagePlaceholder": "Quiero una página web para..."
+  },
+  "footer": {
+    "title": "Todos los derechos reservados.",
+    "privacy": "Política de Privacidad"
+  },
+  "whatsappButton": "Hola ACE! Estoy interesado en sus servicios de desarrollo de Software."
 }

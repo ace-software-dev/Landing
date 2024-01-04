@@ -9,6 +9,9 @@ import { Autoplay } from 'swiper/modules';
 import CampanarioLogo from '@/public/images/CampanarioLogo.png'
 import NefroVidaLogo from '@/public/images/NefroVidaLogo.png'
 import MonarcaLogo from '@/public/images/MonarcaLogo.png'
+import { get } from 'http';
+import getDictionary from '@/app/dictionaries';
+
 
 export default function PreviousClients() {
   const images = [
@@ -19,12 +22,13 @@ export default function PreviousClients() {
     CampanarioLogo,
     NefroVidaLogo
   ];
+  const dict = getDictionary();
 
   return (
     <section>
       <div className="max-w-3xl md:max-w-3xl lg:max-w-6xl mx-auto">
         <div className='py-12 md:py-20'>
-          <Title classes='w-11/12 md:w-full'>Empresas que confían en nosotros</Title>
+          <Title classes='w-11/12 md:w-full'>{dict.previousclients.title}</Title>
           <div className="flex pt-11" data-aos="fade-up">
             <Swiper
               spaceBetween={60}

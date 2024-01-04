@@ -23,5 +23,63 @@
     ],
     "slogan": "We love to see you grow",
     "ctaButton": "Quote now"
-  }
+  },
+  "nosotros": {
+    "title": "Why Choose Us?",
+    "subtitle": "Our Added Value",
+    "description": "You will have peace of mind while we work, keeping you in control with constant updates and total transparency.",
+    "ux": {
+      "title": "User Experience",
+      "description": "We design with the user in mind, ensuring that your software is intuitive and enjoyable."
+    },
+    "quality": {
+      "title": "Quality",
+      "description": "Commitment to the highest quality standards; we deliver excellence."
+    },
+    "tailored": {
+      "title": "Customized Solutions",
+      "description": "Every project is unique, so we tailor our solutions to meet your needs."
+    },
+    "agile": {
+      "title": "Incremental Development",
+      "description": "Continuous deliveries that allow you to quickly leverage the benefits of your new software."
+    }
+  },
+  "servicios": {
+    "title": "What We Do?",
+    "subtitle": "Services",
+    "web": {
+      "title": "Web Applications",
+      "description": "Designed to fit your company's workflow and seamlessly integrate with your existing operations."
+    },
+    "landing": {
+      "title": "Landing Page",
+      "description": "We design and develop the website that will grow your business and give confidence to your customers from the start."
+    },
+    "mobile": {
+      "title": "Mobile Applications",
+      "description": "We know having everything at your reach is a must. Collaboration and communication wherever you are."
+    }
+  },
+  "previousclients": {
+    "title": "Companies that trust us"
+  },
+  "contactform": {
+    "title": "Ready to take your business",
+    "title2": "to the next level?",
+    "subtitle": "Contact us to quote your project",
+    "name": "Full Name",
+    "namePlacehoder": "Alexander Sterling",
+    "email": "Email",
+    "emailPlaceholder": "alex.sterling@example.com",
+    "whatsapp": "WhatsApp",
+    "whatsappPlaceholder": "55 1234 5678",
+    "message": "Tell us more about your idea",
+    "messagePlaceholder": "I want a website for..."
+  },
+  "footer": {
+    "title": "All rights reserved.",
+    "privacy": "Privacy Policy"
+  },
+  "whatsappButton": "Hello ACE! I am interested in your software development services."
 }

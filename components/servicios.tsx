@@ -1,16 +1,22 @@
+'use client'
+
 import Image from 'next/image'
 import SectionTitle from './ui/section-title'
 import Browser from '@/public/images/Browser.svg'
 import Rocket from '@/public/images/Rocket.svg'
 import Mobile from '@/public/images/Mobile.svg'
+import getDictionary from '@/app/dictionaries'
 
 export default function Servicios() {
+
+  const dict = getDictionary();
+
   return (
     <section>
       <div className="max-w-6xl mx-auto sm:px-6">
         <div className="py-12 md:py-20">
 
-          <SectionTitle subtitle='Servicios' title='¿Qué hacemos?' />
+          <SectionTitle subtitle={dict.servicios.subtitle} title={dict.servicios.title} />
 
           <div className="max-w-lg mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none pt-11">
 
@@ -19,8 +25,8 @@ export default function Servicios() {
                 <Image className="w-full h-11" src={Browser} width={48} height={48} alt="Web Browser" />
               </div>
               <div className="flex flex-col gap-3">
-                <div className="text-center text-2xl font-medium">Aplicaciones Web </div>
-                <div className="text-justify text-lg text-gray-400">Creadas para adaptarse a los flujos de trabajo de tu empresa e integrar sin esfuerzo tus operaciones existentes.</div>
+                <div className="text-center text-2xl font-medium">{dict.servicios.web.title}</div>
+                <div className="text-justify text-lg text-gray-400">{dict.servicios.web.description}</div>
               </div>
             </div>
 
@@ -29,8 +35,8 @@ export default function Servicios() {
                 <Image className="w-full h-11" src={Rocket} width={48} height={48} alt="Landing Page" />
               </div>
               <div className="flex flex-col gap-3">
-                <div className="text-center text-2xl font-medium">Landing Page </div>
-                <div className="text-justify text-lg text-gray-400">Diseñamos y desarrollamos la página que hará crecer tu negocio y le dará confianza a tus clientes desde un inicio.</div>
+                <div className="text-center text-2xl font-medium">{dict.servicios.landing.title}</div>
+                <div className="text-justify text-lg text-gray-400">{dict.servicios.landing.description}</div>
               </div>
             </div>
 
@@ -39,8 +45,8 @@ export default function Servicios() {
                 <Image className="w-full h-11" src={Mobile} width={48} height={48} alt="Mobile App" />
               </div>
               <div className="flex flex-col gap-3">
-                <div className="text-center text-2xl font-medium">Aplicaciones Móviles </div>
-                <div className="text-justify text-lg text-gray-400">Sabemos que tener todo en la palma de la mano es esencial. Colaboración y comunicación donde quiera que estés.</div>
+                <div className="text-center text-2xl font-medium">{dict.servicios.mobile.title}</div>
+                <div className="text-justify text-lg text-gray-400">{dict.servicios.mobile.description}</div>
               </div>
             </div>
 
