@@ -75,7 +75,9 @@
     "whatsapp": "WhatsApp",
     "whatsappPlaceholder": "55 1234 5678",
     "message": "Cuéntanos un poco más de tu idea",
-    "messagePlaceholder": "Quiero una página web para..."
+    "messagePlaceholder": "Quiero una página web para...",
+    "submitSuccess": "Gracias! Nos contactaremos pronto.",
+    "submitError": "Tuvimos un problema, inténtalo más tarde."
   },
   "footer": {
     "title": "Todos los derechos reservados.",

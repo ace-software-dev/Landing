@@ -41,17 +41,17 @@ export default function Contactanos() {
         const result = await response.json();
         if (result.success) {
           setFormData({ nombre: '', correo: '', numero: '', comentarios: '' });
-          setSubmissionStatus("Gracias! Nos contactaremos pronto.");
+          setSubmissionStatus(dict.contactform.submitSuccess);
           await captchaRef.current.resetCaptcha();
         } else {
           setFormData({ nombre: '', correo: '', numero: '', comentarios: '' });
-          setSubmissionStatus("Tuvimos un problema, inténtalo más tarde.");
+          setSubmissionStatus(dict.contactform.submitError);
           await captchaRef.current.resetCaptcha();
         }
       }
     } catch (e) {
       setFormData({ nombre: '', correo: '', numero: '', comentarios: '' });
-      setSubmissionStatus("Tuvimos un problema, inténtalo más tarde.");
+      setSubmissionStatus(dict.contactform.submitError);
       await captchaRef.current.resetCaptcha();
     }
   }
