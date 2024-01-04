@@ -71,23 +71,28 @@ export default function MobileMenu() {
         <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-white"></div>
         <ul className="bg-slate-900 px-4 py-3 font-medium rounded bg-opacity-95">
           <li>
-            <Link href="/">
+            <Link href="#header">
               <div className="flex py-2 justify-center w-full hover:underline text-2xl">{dict.topbar.home}</div>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="#nosotros">
               <div className="flex py-2 justify-center w-full hover:underline text-2xl">{dict.topbar.us}</div>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="#servicios">
               <div className="flex py-2 justify-center w-full hover:underline text-2xl">{dict.topbar.services}</div>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="#clientes">
               <div className="flex py-2 justify-center w-full hover:underline text-2xl">{dict.topbar.clients}</div>
+            </Link>
+          </li>
+          <li>
+            <Link href="#contactanos">
+              <div className="flex py-2 justify-center w-full hover:underline text-2xl">{dict.global.ctaButton}</div>
             </Link>
           </li>
           <li className="flex justify-center">

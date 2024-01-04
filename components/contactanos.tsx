@@ -61,7 +61,7 @@ export default function Contactanos() {
   }
 
   return (
-    <section>
+    <section id="contactanos">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20 flex flex-col gap-20">
         <div className="">
           <div className='flex-col justify-start items-center gap-4 flex text-center'>
@@ -69,7 +69,7 @@ export default function Contactanos() {
             <div className="text-[1.34rem] lg:text-3xl">{dict.contactform.subtitle}</div>
           </div>
         </div>
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10" data-aos="fade-up">
           <div className="items-center gap-16 flex sm:px-8 md:px-20">
             <img className=" hidden md:block object-cover w-1/4" src='\images\CoolRocket.svg' alt='Rocket' loading="lazy"/>
             <form onSubmit={handleSubmit} className="w-full md:w-3/4">

@@ -12,7 +12,7 @@ export default function Servicios() {
   const dict = getDictionary();
 
   return (
-    <section>
+    <section id="servicios">
       <div className="max-w-6xl mx-auto sm:px-6">
         <div className="py-12 md:py-20">
 

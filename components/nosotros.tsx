@@ -11,7 +11,7 @@ export default function Nosotros() {
   const dict = getDictionary();
   
   return (
-    <section className="flex justify-center">
+    <section id="nosotros" className="flex justify-center">
       <div className="flex flex-col max-w-6xl py-12 md:py-20 gap-11 w-[100vw]">
         <div className="text-center">
           <SectionTitle subtitle={dict.nosotros.subtitle} title={dict.nosotros.title}></SectionTitle>

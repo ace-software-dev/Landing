@@ -19,7 +19,7 @@ export default function Hero() {
 
 
   return (
-    <section>
+    <section id="header">
       <div className="xs:h-[45rem] md:h-full md:w-11/12 max-w-[85rem] w-full px-4 sm:px-6 relative flex justify-center overflow-hidden md:px-0 md:mx-auto">
 
         {/* Illustration behind hero content */}
