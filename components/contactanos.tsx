@@ -92,9 +92,10 @@ export default function Contactanos() {
                         <option value="1">+1</option>
                         <option value="52" defaultValue={1}>+52</option>
                         <option value="593">+593</option>
+                        <option value="+">+</option>
                       </select>
                     </div>
-                    <input type="number" id="numero" name="numero" placeholder={dict.contactform.whatsappPlaceholder} value={formData.numero} onChange={(e) => setFormData({ ...formData, numero: e.target.value })} className="w-full self-stretch px-4 py-2 bg-slate-700 rounded-r-xl gap-2.5 text-slate-50 focus:ring-2 focus:ring-inset focus:ring-indigo-600"/>
+                    <input type="number" id="numero" name="numero" min="0" max="0" placeholder={dict.contactform.whatsappPlaceholder} value={formData.numero} onChange={(e) => setFormData({ ...formData, numero: e.target.value })} className="w-full self-stretch px-4 py-2 bg-slate-700 rounded-r-xl gap-2.5 text-slate-50 focus:ring-2 focus:ring-inset focus:ring-indigo-600 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"/>
                   </div>
                 </div>
 
