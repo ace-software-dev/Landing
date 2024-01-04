@@ -19,7 +19,7 @@ export default function Hero() {
 
 
   return (
-    <section>
+    <section id="header">
       <div className="xs:h-[45rem] md:h-full md:w-11/12 max-w-[85rem] w-full px-4 sm:px-6 relative flex justify-center overflow-hidden md:px-0 md:mx-auto">
 
         {/* Illustration behind hero content */}
@@ -44,30 +44,34 @@ export default function Hero() {
                 </div>
               </div>
               <div className="flex gap-8 justify-center items-center flex-col md:justify-start md:flex-row">
-                <Link href={'https://calendly.com/jorgeramirez-software/entendiendo-tus-necesidades'} target="_blank">
+                <Link href={'https://calendly.com/acesoftwaremx/amamos-verte-crecer'} target="_blank">
                   <Button>{dict.header.ctaButton}</Button>
                 </Link>
                 <div className="inline-flex gap-2 md:gap-4 h-8">
-                  <Image
-                    src="/images/instagram_icon.svg"
-                    alt='Instagram Logo Icon'
-                    width={32}
-                    height={32}
-                    className='hover:cursor-pointer hover:opacity-90'
-                  />
-                  <Image
-                    src="/images/linkedin_icon.svg"
-                    alt='Instagram Logo Icon'
-                    width={32}
-                    height={32}
-                    className='hover:cursor-pointer hover:opacity-90'
-                  />
+                  <Link href={"https://www.instagram.com/ace.software.mx?igsh=OHlweHJ4dWZwNHl3"} target="_blank">
+                    <Image
+                      src="/images/instagram_icon.svg"
+                      alt='Instagram Logo Icon'
+                      width={32}
+                      height={32}
+                      className='hover:cursor-pointer hover:opacity-90'
+                    />
+                  </Link>
+                  <Link href={"https://www.linkedin.com/company/ace-software-mx/"} target="_blank">
+                    <Image
+                      src="/images/linkedin_icon.svg"
+                      alt='Instagram Logo Icon'
+                      width={32}
+                      height={32}
+                      className='hover:cursor-pointer hover:opacity-90'
+                    />
+                  </Link>
                   <Image
                     src="/images/facebook_icon.svg"
                     alt='Instagram Logo Icon'
                     width={32}
                     height={32}
-                    className='hover:cursor-pointer hover:opacity-90'
+                    className='hidden hover:cursor-pointer hover:opacity-90'
                   />
                 </div>
               </div>
