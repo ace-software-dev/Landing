@@ -4,7 +4,7 @@ interface GradientTextProps {
   children: React.ReactNode,
 }
 
-function GradientText({ children } : GradientTextProps) {
+function GradientText({ children }: GradientTextProps) {
   return (
     <span className="h-full pl-3 bg-linear-text-gradient block text-transparent bg-clip-text animate-spin-words">
       {children}
