@@ -44,7 +44,7 @@ export default function Hero() {
                 </div>
               </div>
               <div className="flex gap-8 justify-center items-center flex-col md:justify-start md:flex-row">
-                <Link href={'https://calendly.com/jorgeramirez-software/entendiendo-tus-necesidades'} target="_blank">
+                <Link href={'https://calendly.com/acesoftwaremx/amamos-verte-crecer'} target="_blank">
                   <Button>{dict.header.ctaButton}</Button>
                 </Link>
                 <div className="inline-flex gap-2 md:gap-4 h-8">
