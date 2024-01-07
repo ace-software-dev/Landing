@@ -5,6 +5,22 @@ import Title from './ui/title'
 export default function Contactanos() {
     return (
         <section>
+            <div className="relative">
+                <div className="absolute -z-10 opacity-40 bg-radial-gradient-blue
+                    -left-12 top-30 w-[70vw] h-[50vw]
+                    xs:left-[3px] xs:-top-5 xs:w-[25rem] xs:h-[18rem]
+                    sm:left-[5rem] sm:-top-5 sm:w-[30rem] sm:h-[18rem]
+                    md:left-2 md:top-[20rem] md:w-[55vw] md:h-[50vw] md:place-self-start
+                ">
+                </div>
+                <div className="absolute -z-10 opacity-40 bg-radial-gradient-purple
+                    -right-12 top-30 w-[70vw] h-[50vw]
+                    xs:right-[3px] xs:-top-5 xs:w-[25rem] xs:h-[18rem]
+                    sm:right-[5rem] sm:-top-5 sm:w-[30rem] sm:h-[18rem]
+                    md:right-2 md:top-[20rem] md:w-[55vw] md:h-[50vw] md:place-self-start
+                ">
+                </div>
+            </div>
             <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 flex flex-col gap-20">
                 <div className="">
                     <div className='flex-col justify-start items-center gap-4 flex text-center'>
