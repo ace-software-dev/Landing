@@ -7,6 +7,33 @@ import { Player } from "@lottiefiles/react-lottie-player"
 export default function Nosotros() {
   return (
     <section className="flex justify-center">
+
+      {/* Illustration behind hero content */}
+      <div className="relative">
+        <div className="absolute -z-10 lg:block pointer-events-none opacity-30 bg-radial-gradient-blue
+          -top-24 w-[60vw] h-[60vw] left-16
+          xs:left-20
+          sm:left-32
+          md:left-72 md:right-16 md:w-[50vw] md:h-[50vw] md:place-self-start
+          lg:left-[32rem] lg:-top-32
+        "></div>
+        <div className="absolute -z-10 opacity-40 bg-radial-gradient-purple
+          -left-32 top-80 w-[75vw] h-[75vw]
+          xs:top-[24rem]
+          sm:w-[60vw] sm:h-[60vw]
+          md:top-[20rem] md:w-[50vw] md:h-[50vw] md:place-self-start
+          lg:top-[28rem] lg:-left-[12rem]
+        "></div>
+        <div className="absolute -z-10 opacity-30 bg-radial-gradient-blue
+          left-[38vw] top-[52rem] w-[75vw] h-[75vw]
+          xs:top-[60rem] xs:left-[30rem] xs:w-[30rem] xs:h-[30rem]
+          sm:w-[60vw] sm:h-[60vw]
+          md:top-[35rem] md:left-[35rem] md:w-[50vw] md:h-[50vw] md:place-self-start
+          lg:hidden
+        "></div>
+      </div>
+
+
       <div className="flex flex-col max-w-6xl py-12 md:py-20 gap-11 w-[100vw]">
         <div className="text-center">
           <SectionTitle subtitle={"Nuestro valor agregado"} title={"¿Por qué nosotros?"}></SectionTitle>
