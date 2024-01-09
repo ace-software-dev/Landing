@@ -8,7 +8,6 @@ const locales = {
   es,
 };
 
-export default function getDictionary() {
-  const locale = useCurrentLocale(i18nConfig);
+export default function getDictionary(locale) {
   return locales[locale] || es;
 }
