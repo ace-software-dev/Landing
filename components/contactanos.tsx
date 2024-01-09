@@ -21,7 +21,13 @@ export default function Contactanos() {
                         md:right-2 md:top-[20rem] md:w-[55vw] md:h-[50vw] md:place-self-start
                     ">
                     </div>
-
+                    <div className="absolute -z-10 opacity-30 bg-radial-gradient-purple
+                        -right-32 top-[30rem] w-[90vw] h-[90vw]
+                        xs:top-[24rem]
+                        sm:top-[20rem] sm:w-[70vw] sm:h-[70vw]
+                        md:hidden
+                    ">
+                    </div>
                 </div>
             </div>
             <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 flex flex-col gap-20">
