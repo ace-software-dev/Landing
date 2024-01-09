@@ -9,6 +9,9 @@ import { Autoplay } from 'swiper/modules';
 import CampanarioLogo from '@/public/images/CampanarioLogo.png'
 import NefroVidaLogo from '@/public/images/NefroVidaLogo.png'
 import MonarcaLogo from '@/public/images/MonarcaLogo.png'
+import { get } from 'http';
+import getDictionary from '@/app/dictionaries';
+
 
 export default function PreviousClients() {
   const images = [
@@ -19,21 +22,22 @@ export default function PreviousClients() {
     CampanarioLogo,
     NefroVidaLogo
   ];
+  const dict = getDictionary();
 
   return (
-    <section>
-    <div className="relative">
-      <div className="absolute -z-10 opacity-10 bg-radial-gradient-purple
-        -right-16 -top-4 w-[55vw] h-[55vw]
-        xs:-top-32
-        sm:w-[60vw] sm:h-[60vw]
-        md:top-0 md:right-24 md:w-[50vw] md:h-[50vw] md:place-self-start
-        lg:top-0 lg:right-32
-      "></div>
-    </div>
+    <section id="clientes">
+      <div className="relative">
+        <div className="absolute -z-10 opacity-10 bg-radial-gradient-purple
+          -right-16 -top-4 w-[55vw] h-[55vw]
+          xs:-top-32
+          sm:w-[60vw] sm:h-[60vw]
+          md:top-0 md:right-24 md:w-[50vw] md:h-[50vw] md:place-self-start
+          lg:top-0 lg:right-32
+        "></div>
+      </div>
       <div className="max-w-3xl md:max-w-3xl lg:max-w-6xl mx-auto">
         <div className='py-12 md:py-20'>
-          <Title classes='w-11/12 md:w-full'>Empresas que confían en nosotros</Title>
+          <Title classes='w-11/12 md:w-full'>{dict.previousclients.title}</Title>
           <div className="flex pt-11" data-aos="fade-up">
             <Swiper
               spaceBetween={60}

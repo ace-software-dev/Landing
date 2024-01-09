@@ -1,7 +1,7 @@
 'use client'
 
 import '../css/style.css';
-import Header from '@/components/ui/header';
+import Topbar from '@/components/ui/topbar';
 import localFont from '@next/font/local';
 import { useEffect } from 'react';
 import AOS from 'aos';
@@ -62,7 +62,7 @@ export default function RootLayout({
     <html lang={locale} className="text-[12px] md:text-sm lg:text-base">
       <body className={`${filson_pro.variable} font-filson-pro antialiased bg-blue-10 text-gray-200 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden">
-          <Header />
+          <Topbar />
           <div className="grow mt-[70px]" >
             <Hero />
           </div>

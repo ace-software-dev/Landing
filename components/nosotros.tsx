@@ -1,13 +1,17 @@
 'use client'
 
+import getDictionary from "@/app/dictionaries"
 import SectionTitle from "./ui/section-title"
 import Title from "./ui/title"
 import { Player } from "@lottiefiles/react-lottie-player"
 
-export default function Nosotros() {
-  return (
-    <section className="flex justify-center">
 
+export default function Nosotros() {
+
+  const dict = getDictionary();
+
+  return (
+    <section id="nosotros" className="flex justify-center">
       {/* Illustration behind hero content */}
       <div className="relative">
         <div className="absolute -z-10 lg:block pointer-events-none opacity-30 bg-radial-gradient-blue
@@ -32,13 +36,11 @@ export default function Nosotros() {
           lg:hidden
         "></div>
       </div>
-
-
       <div className="flex flex-col max-w-6xl py-12 md:py-20 gap-11 w-[100vw]">
         <div className="text-center">
-          <SectionTitle subtitle={"Nuestro valor agregado"} title={"¿Por qué nosotros?"}></SectionTitle>
+          <SectionTitle subtitle={dict.nosotros.subtitle} title={dict.nosotros.title}></SectionTitle>
           <div className=" flex justify-center">
-            <p className="text-center text-[1.34rem] lg:text-2xl md:w-[70%]">Tendrás paz mental mientras nosotros trabajamos, manteniéndote en control con actualizaciones constantes y total transparencia</p>
+            <p className="text-center text-[1.34rem] lg:text-2xl md:w-[70%]">{dict.nosotros.description}</p>
           </div>
         </div>
 
@@ -56,17 +58,17 @@ export default function Nosotros() {
 
             <div className=" flex flex-col gap-12 justify-center">
               <div className="flex items-start flex-col" data-aos="fade-right">
-                <Title classes="text-start" size="text-[1.84rem] lg:text-4xl">Experiencia de Usuario</Title>
+                <Title classes="text-start" size="text-[1.84rem] lg:text-4xl">{dict.nosotros.ux.title}</Title>
                 <p className="text-xl">
-                  Diseñamos con el usuario en mente, asegurando que tu software sea intuitivo y agradable
+                  {dict.nosotros.ux.description}
                 </p>
               </div>
 
 
               <div className="flex items-start flex-col" data-aos="fade-right">
-                <Title classes="text-start" size="text-[1.84rem] lg:text-4xl">Calidad</Title>
+                <Title classes="text-start" size="text-[1.84rem] lg:text-4xl">{dict.nosotros.quality.title}</Title>
                 <p className="text-xl">
-                  Compromiso con los más altos estándares de calidad, ofrecemos excelencia
+                  {dict.nosotros.quality.description}
                 </p>
               </div>
             </div>
@@ -83,17 +85,17 @@ export default function Nosotros() {
 
             <div className="flex flex-col gap-12">
               <div className="flex items-start flex-col" data-aos="fade-right">
-                <Title classes="text-start" size="text-[1.84rem] lg:text-4xl">Soluciones personalizadas</Title>
+                <Title classes="text-start" size="text-[1.84rem] lg:text-4xl">{dict.nosotros.tailored.title}</Title>
                 <p className="text-xl">
-                  Software a la medida que se adapta a las necesidades específicas de tu negocio.
+                  {dict.nosotros.tailored.description}
                 </p>
               </div>
 
 
               <div className="flex items-start flex-col" data-aos="fade-right">
-                <Title classes="text-start" size="text-[1.84rem] lg:text-4xl">Desarrollo incremental</Title>
+                <Title classes="text-start" size="text-[1.84rem] lg:text-4xl">{dict.nosotros.agile.title}</Title>
                 <p className="text-xl">
-                  Entregas continuas que te permiten aprovechar rápidamente las ventajas de tu nuevo software
+                  {dict.nosotros.agile.description}
                 </p>
               </div>
             </div>
