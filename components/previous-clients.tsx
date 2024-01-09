@@ -26,6 +26,15 @@ export default function PreviousClients() {
 
   return (
     <section id="clientes">
+      <div className="relative">
+        <div className="absolute -z-10 opacity-10 bg-radial-gradient-purple
+          -right-16 -top-4 w-[55vw] h-[55vw]
+          xs:-top-32
+          sm:w-[60vw] sm:h-[60vw]
+          md:top-0 md:right-24 md:w-[50vw] md:h-[50vw] md:place-self-start
+          lg:top-0 lg:right-32
+        "></div>
+      </div>
       <div className="max-w-3xl md:max-w-3xl lg:max-w-6xl mx-auto">
         <div className='py-12 md:py-20'>
           <Title classes='w-11/12 md:w-full'>{dict.previousclients.title}</Title>

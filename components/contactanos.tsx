@@ -20,7 +20,7 @@ export default function Contactanos() {
 
   const captchaRef = React.useRef<HCaptcha>(null);
 
-  async function handleSubmit(event) {
+  async function handleSubmit(event: any) {
     try{
       event.preventDefault();
       const formData = new FormData(event.target);
@@ -42,17 +42,17 @@ export default function Contactanos() {
         if (result.success) {
           setFormData({ nombre: '', correo: '', numero: '', comentarios: '' });
           setSubmissionStatus(dict.contactform.submitSuccess);
-          await captchaRef.current.resetCaptcha();
+          await captchaRef.current?.resetCaptcha();
         } else {
           setFormData({ nombre: '', correo: '', numero: '', comentarios: '' });
           setSubmissionStatus(dict.contactform.submitError);
-          await captchaRef.current.resetCaptcha();
+          await captchaRef.current?.resetCaptcha();
         }
       }
     } catch (e) {
       setFormData({ nombre: '', correo: '', numero: '', comentarios: '' });
       setSubmissionStatus(dict.contactform.submitError);
-      await captchaRef.current.resetCaptcha();
+      await captchaRef.current?.resetCaptcha();
     }
   }
 
@@ -62,6 +62,31 @@ export default function Contactanos() {
 
   return (
     <section id="contactanos">
+      <div className="relative">
+        <div className="flex gap-4">
+            <div className="absolute -z-10 opacity-30 bg-radial-gradient-blue
+              -left-12 top-30 w-[70vw] h-[50vw]
+              xs:left-[3px] xs:-top-5 xs:w-[25rem] xs:h-[18rem]
+              sm:left-[5rem] sm:-top-5 sm:w-[30rem] sm:h-[18rem]
+              md:left-2 md:top-[20rem] md:w-[55vw] md:h-[50vw] md:place-self-start
+            ">
+            </div>
+            <div className="absolute -z-10 opacity-30 bg-radial-gradient-purple
+              -right-12 top-30 w-[70vw] h-[50vw]
+              xs:right-[3px] xs:-top-5 xs:w-[25rem] xs:h-[18rem]
+              sm:right-[5rem] sm:-top-5 sm:w-[30rem] sm:h-[18rem]
+              md:right-2 md:top-[20rem] md:w-[55vw] md:h-[50vw] md:place-self-start
+            ">
+            </div>
+            <div className="absolute -z-10 opacity-30 bg-radial-gradient-purple
+              -right-32 top-[30rem] w-[90vw] h-[90vw]
+              xs:top-[24rem]
+              sm:top-[20rem] sm:w-[70vw] sm:h-[70vw]
+              md:hidden
+            ">
+          </div>
+        </div>
+    </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20 flex flex-col gap-20">
         <div className="">
           <div className='flex-col justify-start items-center gap-4 flex text-center'>
@@ -110,7 +135,7 @@ export default function Contactanos() {
                   onVerify={setToken}
                   onExpire={onExpire}
                   ref={captchaRef}
-                /> 
+                />
                 <span className='flex justify-center'>
                   <Button type='submit' classes='text-slate-50 text-lg font-bold' disabled={!token}>{dict.global.ctaButton}</Button>
                 </span>
