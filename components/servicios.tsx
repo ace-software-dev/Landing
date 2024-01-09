@@ -7,6 +7,13 @@ import Mobile from '@/public/images/Mobile.svg'
 export default function Servicios() {
   return (
     <section>
+      <div className="relative">
+        <div className="absolute -z-10 opacity-20 bg-radial-gradient-blue
+          left-[-30vw] top-72 w-[80vw] h-[80vw]
+          sm:left-[-20vw] sm:w-[60vw] sm:h-[60vw]
+          lg:w-[32rem] lg:h-[32rem] lg:left-[24rem] lg:top-8
+        "></div>
+      </div>
       <div className="max-w-6xl mx-auto sm:px-6">
         <div className="py-12 md:py-20">
 
