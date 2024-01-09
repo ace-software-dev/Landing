@@ -27,7 +27,7 @@ function getCookie(name) {
 }
 
 export default function getDictionary() {
-  locale = getCookie('NEXT_LOCALE');
+  let locale = getCookie('NEXT_LOCALE');
   console.log('locale', locale)
   return locales[locale] || es;
 }
