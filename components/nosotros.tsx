@@ -22,7 +22,7 @@ export default function Nosotros() {
           xs:top-[24rem]
           sm:w-[60vw] sm:h-[60vw]
           md:top-[20rem] md:w-[50vw] md:h-[50vw] md:place-self-start
-          lg:top-[28rem] lg:-left-[12rem]
+          lg:top-[32rem] lg:-left-[12rem] lg:opacity-30 lg:w-[30vw] lg:h-[30vw]
         "></div>
         <div className="absolute -z-10 opacity-30 bg-radial-gradient-blue
           left-[38vw] top-[52rem] w-[75vw] h-[75vw]
